@@ -6,15 +6,17 @@ public class CharacterComponent : MonoBehaviour
 {
     public float maxSidewaysSpeed = 10f;
     public float sidewaysAcceleration = 2.0f;
+    public float dashStrength = 10f;
     public float jumpStrength = 10f;
-
-    // Fake a dice roll for the dice. 0 = no override.
-    public int debugDiceRoll = 0;
 
     Rigidbody rigidBody;
 
     float sidewaysInput = 0.0f;
+
+    // Fake a dice roll for the dice. 0 = no override.
+    public int debugDiceRoll = 0;
     int jumpDiceRoll = 0;
+    int dashDiceRoll = 0;
 
     void Awake()
     {
@@ -136,5 +138,10 @@ public class CharacterComponent : MonoBehaviour
     public void DoJump(int diceValue)
     {
         jumpDiceRoll = diceValue;
+    }
+
+    public void DoDash(int diceValue)
+    {
+        dashDiceRoll = diceValue;
     }
 }

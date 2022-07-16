@@ -81,3 +81,53 @@ public class JumpAbility : IAbility
         return true;
     }
 }
+
+public class DashAbility : IAbility
+{
+    CharacterComponent characterComponent;
+    AbilityManager abilityManager;
+    DiceManager diceManager;
+    UISetBackgroundComponent UIBackground;
+    GameObject UI;
+    int id;
+    int lastDiceValue = 0;
+
+    public DashAbility(int newId)
+    {
+        GameObject UILayer = GameObject.FindGameObjectWithTag("UI");
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        characterComponent = player.GetComponent<CharacterComponent>();
+        GameObject controller = GameObject.FindGameObjectWithTag("GameController");
+        abilityManager = controller.GetComponent<AbilityManager>();
+        diceManager = controller.GetComponent<DiceManager>();
+
+        id = newId;
+        UI = Object.Instantiate(abilityManager.abilityUIPrefab, UILayer.transform);
+        UIBackground = UI.GetComponent<UISetBackgroundComponent>();
+        AbilityUtils.UpdateUI(UI, id, type);
+    }
+
+    public AbilityType type
+    {
+        get { return AbilityType.Dash; }
+    }
+
+    bool IAbility.DoAction()
+    {
+        // Check ability cooldown
+        // Consume dice
+        int diceValue = diceManager.ConsumeDice();
+        if (diceValue == 0)
+        {
+            // Not enough dice
+            return false;
+        }
+        lastDiceValue = diceValue;
+
+        // Set Player to jump
+        characterComponent.DoDash(lastDiceValue);
+        UIBackground.SetAbilityDice(lastDiceValue);
+
+        return true;
+    }
+}
