@@ -19,11 +19,7 @@ public class DiceComponent : MonoBehaviour
         manager = gameLogic.GetComponent<DiceManager>();
 
         UI = Instantiate(manager.diceUIPrefab, UILayer.transform);
-        RectTransform UITransform = UI.GetComponent<RectTransform>();
         // #OverrideSorting?
-
-        Vector2 UIPosition = new Vector2(50 + ((float)id * (125.0f + 5.0f)), -55);
-        UITransform.anchoredPosition = UIPosition;
 
         UpdateUI();
     }
@@ -39,6 +35,11 @@ public class DiceComponent : MonoBehaviour
     {
     }
 
+    void OnDestroy()
+    {
+        Destroy(UI);
+    }
+
     IEnumerator RollDice()
     {
         yield return new WaitForSecondsRealtime(manager.rollDiceTimeSeconds);
@@ -47,8 +48,13 @@ public class DiceComponent : MonoBehaviour
         UpdateUI();
     }
 
-    void UpdateUI()
+    public void UpdateUI()
     {
+        // #Improve pos calculation
+        RectTransform UITransform = UI.GetComponent<RectTransform>();
+        Vector2 UIPosition = new Vector2(50 + ((float)id * (125.0f + 5.0f)), -55);
+        UITransform.anchoredPosition = UIPosition;
+
         TMP_Text UIText = UI.GetComponentInChildren<TMP_Text>();
         UIText.text = value.ToString();
     }

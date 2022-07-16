@@ -407,6 +407,7 @@ MonoBehaviour:
   rollDiceTimeSeconds: 5
   numDice: 3
   diceUIPrefab: {fileID: 8292239710190638703, guid: 15f1c56e489390340a0f87a3eb9165b9, type: 3}
+  diceUIHighlightPrefab: {fileID: 9182203405610177696, guid: 741cbb1983b2b2f4485c2307b11ee05f, type: 3}
   dice: []
 --- !u!4 &998749900
 Transform:
