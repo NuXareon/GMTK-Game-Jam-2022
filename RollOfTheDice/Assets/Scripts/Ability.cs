@@ -37,6 +37,7 @@ public class JumpAbility : IAbility
     CharacterComponent characterComponent;
     AbilityManager abilityManager;
     DiceManager diceManager;
+    UISetBackgroundComponent UIBackground;
     GameObject UI;
     int id;
     int lastDiceValue = 0;
@@ -52,7 +53,7 @@ public class JumpAbility : IAbility
 
         id = newId;
         UI = Object.Instantiate(abilityManager.abilityUIPrefab, UILayer.transform);
-
+        UIBackground = UI.GetComponent<UISetBackgroundComponent>();
         AbilityUtils.UpdateUI(UI, id, type);
     }
 
@@ -75,6 +76,7 @@ public class JumpAbility : IAbility
 
         // Set Player to jump
         characterComponent.DoJump(lastDiceValue);
+        UIBackground.SetAbilityDice(lastDiceValue); 
 
         return true;
     }
