@@ -18,6 +18,10 @@ public class AbilityManager : MonoBehaviour
             {
                 abilities.Add(new JumpAbility(abilities.Count));
             }
+            else if (type == AbilityType.Dash)
+            {
+                abilities.Add(new DashAbility(abilities.Count));
+            }
         }
     }
 
@@ -29,6 +33,18 @@ public class AbilityManager : MonoBehaviour
             foreach (IAbility ability in abilities)
             {
                 if (ability.type == AbilityType.Jump)
+                {
+                    ability.DoAction();
+                    break;
+                }
+            }
+        }
+
+        if (Input.GetButtonDown("Dash"))
+        {
+            foreach (IAbility ability in abilities)
+            {
+                if (ability.type == AbilityType.Dash)
                 {
                     ability.DoAction();
                     break;

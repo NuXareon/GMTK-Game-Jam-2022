@@ -7,16 +7,21 @@ public class CharacterComponent : MonoBehaviour
     public float maxSidewaysSpeed = 10f;
     public float sidewaysAcceleration = 2.0f;
     public float dashStrength = 10f;
+    public float dashDurationSeconds = 0.2f;
     public float jumpStrength = 10f;
 
     Rigidbody rigidBody;
 
     float sidewaysInput = 0.0f;
+    Vector3 orientation = new Vector3(1f, 0f, 0f);
 
     // Fake a dice roll for the dice. 0 = no override.
     public int debugDiceRoll = 0;
     int jumpDiceRoll = 0;
     int dashDiceRoll = 0;
+
+    bool isDashing = false;
+    float dashTime = 0.0f;
 
     void Awake()
     {
@@ -32,20 +37,41 @@ public class CharacterComponent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isDashing)
+        {
+            dashTime += Time.deltaTime;
+            return; // Don't process movement while dashing
+        }
+
         sidewaysInput = -Input.GetAxis("Horizontal");
+
+        if (sidewaysInput != 0.0f)
+        {
+            Vector3 groundDirection = Physics.gravity.normalized;
+            Vector3 groundDirectionPositive = new Vector3(Mathf.Abs(groundDirection.x), Mathf.Abs(groundDirection.y), 0.0f);
+            Vector3 right = Vector3.Cross(Vector3.forward, groundDirectionPositive);
+            orientation = (right * sidewaysInput).normalized;
+        }
     }
 
     void FixedUpdate()
     {
-        // Jump
         Vector3 groundDirection = Physics.gravity.normalized;
+        Vector3 groundDirectionPositive = new Vector3(Mathf.Abs(groundDirection.x), Mathf.Abs(groundDirection.y), 0.0f);
+        Vector3 right = Vector3.Cross(Vector3.forward, groundDirectionPositive);
+        float currentSidewaysSpeed = rigidBody.velocity.x * right.x + rigidBody.velocity.y * right.y;
+
+        // Jump
         if (jumpDiceRoll > 0)
         {
+            if (isDashing)
+            {
+                CancelDash();
+            }
+
             Vector3 newVelocity = rigidBody.velocity;
 
-            // #Apply dice properly
             Vector3 jumpSpeed = (-groundDirection);
-
             if (debugDiceRoll > 0)
             {
                 jumpSpeed *= Mathf.Sqrt(2 * Physics.gravity.magnitude * debugDiceRoll * jumpStrength);
@@ -68,10 +94,46 @@ public class CharacterComponent : MonoBehaviour
             jumpDiceRoll = 0;
         }
 
+        // Dash
+        if (dashDiceRoll > 0)
+        {
+            Vector3 newVelocity = rigidBody.velocity;
+
+            newVelocity.y = 0.0f; // Cancel vertical movement
+
+            Vector3 dashSpeed = orientation * dashStrength;
+            if (debugDiceRoll > 0)
+            {
+                dashSpeed *= debugDiceRoll;
+            }
+            else
+            {
+                dashSpeed *= dashDiceRoll;
+            }
+
+            newVelocity.x = dashSpeed.x;
+            rigidBody.velocity = newVelocity;
+            rigidBody.useGravity = false;
+
+            dashDiceRoll = 0;
+            isDashing = true;
+            dashTime = 0;
+        }
+
+        if (isDashing)
+        {
+            if (dashTime >= dashDurationSeconds)
+            {
+                CancelDash();
+            }
+            else
+            {
+                // Stop processing physics 
+                return;
+            }
+        }
+
         // Horizontal movement
-        Vector3 groundDirectionPositive = new Vector3(Mathf.Abs(groundDirection.x), Mathf.Abs(groundDirection.y), 0.0f);
-        Vector3 right = Vector3.Cross(Vector3.forward, groundDirectionPositive);
-        float currentSidewaysSpeed = rigidBody.velocity.x * right.x + rigidBody.velocity.y * right.y;
         if (sidewaysInput != 0.0f)
         {
             int layerMask = 1 << 3;
@@ -120,20 +182,42 @@ public class CharacterComponent : MonoBehaviour
         }
         else
         {
+            // Stop when nothing is pressed
             if (Mathf.Abs(currentSidewaysSpeed) != 0.0f)
             {
-                rigidBody.velocity -= right * Mathf.Min(maxSidewaysSpeed, currentSidewaysSpeed);
+                rigidBody.velocity -= right * currentSidewaysSpeed;
             }
         }
-        //# cap vertical speed
-/*
-        float currentVerticalSpeed = mRigidBody.velocity.x * -groundDirection.x + mRigidBody.velocity.y * -groundDirection.y;
-        if (Mathf.Abs(currentVerticalSpeed) > maxVerticalSpeed)
+        
+        // Cap horizontal speed
+        if (Mathf.Abs(currentSidewaysSpeed) > maxSidewaysSpeed)
         {
-            mRigidBody.velocity -= groundDirection * (Mathf.Abs(currentVerticalSpeed) - maxVerticalSpeed);
+            float speedDiff = Mathf.Abs(currentSidewaysSpeed) - maxSidewaysSpeed;
+            if (currentSidewaysSpeed < 0.0f)
+            {
+                speedDiff = -speedDiff;
+            }
+            rigidBody.velocity -= right * speedDiff;
         }
-*/
+        
+
+        //# cap vertical speed
+        /*
+                float currentVerticalSpeed = mRigidBody.velocity.x * -groundDirection.x + mRigidBody.velocity.y * -groundDirection.y;
+                if (Mathf.Abs(currentVerticalSpeed) > maxVerticalSpeed)
+                {
+                    mRigidBody.velocity -= groundDirection * (Mathf.Abs(currentVerticalSpeed) - maxVerticalSpeed);
+                }
+        */
     }
+
+    void CancelDash()
+    {
+        isDashing = false;
+        dashTime = 0f;
+        rigidBody.useGravity = true;
+    }
+
 
     public void DoJump(int diceValue)
     {

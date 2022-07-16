@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 37773965}
   - component: {fileID: 37773964}
   - component: {fileID: 37773963}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -568,7 +568,7 @@ GameObject:
   - component: {fileID: 671669781}
   - component: {fileID: 671669780}
   - component: {fileID: 671669779}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -665,7 +665,7 @@ GameObject:
   - component: {fileID: 1750437341}
   - component: {fileID: 1750437340}
   - component: {fileID: 1750437339}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -853,6 +853,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameLogic
       objectReference: {fileID: 0}
+    - target: {fileID: 3111918089417036937, guid: 5957a01dca32cf942b48e8f27dc265d9, type: 3}
+      propertyPath: numDice
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111918089417036937, guid: 5957a01dca32cf942b48e8f27dc265d9, type: 3}
+      propertyPath: rollDiceTimeSeconds
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3111918089417036942, guid: 5957a01dca32cf942b48e8f27dc265d9, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -899,6 +907,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6200477292678774193, guid: 5957a01dca32cf942b48e8f27dc265d9, type: 3}
       propertyPath: abilitiesAvailable.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6200477292678774193, guid: 5957a01dca32cf942b48e8f27dc265d9, type: 3}
+      propertyPath: abilitiesAvailable.Array.data[1]
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
