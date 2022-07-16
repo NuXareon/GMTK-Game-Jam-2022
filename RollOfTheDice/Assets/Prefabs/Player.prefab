@@ -129,3 +129,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSidewaysSpeed: 20
   sidewaysAcceleration: 2
+  jumpStrength: 1.22
+  debugDiceRoll: 0

@@ -6,10 +6,15 @@ public class CharacterComponent : MonoBehaviour
 {
     public float maxSidewaysSpeed = 10f;
     public float sidewaysAcceleration = 2.0f;
+    public float jumpStrength = 10f;
+
+    // Fake a dice roll for the dice. 0 = no override.
+    public int debugDiceRoll = 0;
 
     Rigidbody rigidBody;
 
     float sidewaysInput = 0.0f;
+    bool jump = false;
 
     void Awake()
     {
@@ -26,11 +31,44 @@ public class CharacterComponent : MonoBehaviour
     void Update()
     {
         sidewaysInput = -Input.GetAxis("Horizontal");
+
+        // #TEMP
+        if (Input.GetButtonDown("Jump"))
+        {
+            jump = true;
+        }
     }
 
     void FixedUpdate()
     {
+        // Jump
         Vector3 groundDirection = Physics.gravity.normalized;
+        if (jump)
+        {
+            Vector3 newVelocity = rigidBody.velocity;
+
+            // #Apply dice properly
+            Vector3 jumpSpeed = (-groundDirection);
+
+            if (debugDiceRoll > 0)
+            {
+                jumpSpeed *= Mathf.Sqrt(2 * Physics.gravity.magnitude * debugDiceRoll * jumpStrength);
+            }
+
+            if (jumpSpeed.x != 0.0f)
+            {
+                newVelocity.x = jumpSpeed.x;
+            }
+            if (jumpSpeed.y != 0.0f)
+            {
+                newVelocity.y = jumpSpeed.y;
+            }
+
+            rigidBody.velocity = newVelocity;
+            jump = false;
+        }
+
+        // Horizontal movement
         Vector3 groundDirectionPositive = new Vector3(Mathf.Abs(groundDirection.x), Mathf.Abs(groundDirection.y), 0.0f);
         Vector3 right = Vector3.Cross(Vector3.forward, groundDirectionPositive);
         float currentSidewaysSpeed = rigidBody.velocity.x * right.x + rigidBody.velocity.y * right.y;
