@@ -19,7 +19,6 @@ public class DiceComponent : MonoBehaviour
         manager = gameLogic.GetComponent<DiceManager>();
 
         UI = Instantiate(manager.diceUIPrefab, UILayer.transform);
-        // #OverrideSorting?
 
         UpdateUI();
     }

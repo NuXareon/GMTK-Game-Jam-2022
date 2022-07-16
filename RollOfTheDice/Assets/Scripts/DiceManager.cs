@@ -31,11 +31,7 @@ public class DiceManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // #TEMP
-        if (Input.GetButtonDown("Jump"))
-        {
-            ConsumeDice();
-        }
+
     }
 
     GameObject CreateDice(int id)

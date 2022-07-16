@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3111918089417036942}
   - component: {fileID: 3111918089417036937}
+  - component: {fileID: 6200477292678774193}
   m_Layer: 0
   m_Name: GameLogic
   m_TagString: GameController
@@ -49,3 +50,17 @@ MonoBehaviour:
   diceUIPrefab: {fileID: 8292239710190638703, guid: 15f1c56e489390340a0f87a3eb9165b9, type: 3}
   diceUIHighlightPrefab: {fileID: 9182203405610177696, guid: 741cbb1983b2b2f4485c2307b11ee05f, type: 3}
   dice: []
+--- !u!114 &6200477292678774193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3111918089417036936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cde8017fddebd84388fb9fad514fe26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilitiesAvailable: 
+  abilityUIPrefab: {fileID: 2606531447730775319, guid: aa86683d0f89cdf4291018dea2c313bb, type: 3}

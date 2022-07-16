@@ -14,7 +14,7 @@ public class CharacterComponent : MonoBehaviour
     Rigidbody rigidBody;
 
     float sidewaysInput = 0.0f;
-    bool jump = false;
+    int jumpDiceRoll = 0;
 
     void Awake()
     {
@@ -31,19 +31,13 @@ public class CharacterComponent : MonoBehaviour
     void Update()
     {
         sidewaysInput = -Input.GetAxis("Horizontal");
-
-        // #TEMP
-        if (Input.GetButtonDown("Jump"))
-        {
-            jump = true;
-        }
     }
 
     void FixedUpdate()
     {
         // Jump
         Vector3 groundDirection = Physics.gravity.normalized;
-        if (jump)
+        if (jumpDiceRoll > 0)
         {
             Vector3 newVelocity = rigidBody.velocity;
 
@@ -53,6 +47,10 @@ public class CharacterComponent : MonoBehaviour
             if (debugDiceRoll > 0)
             {
                 jumpSpeed *= Mathf.Sqrt(2 * Physics.gravity.magnitude * debugDiceRoll * jumpStrength);
+            }
+            else
+            {
+                jumpSpeed *= Mathf.Sqrt(2 * Physics.gravity.magnitude * jumpDiceRoll * jumpStrength);
             }
 
             if (jumpSpeed.x != 0.0f)
@@ -65,15 +63,13 @@ public class CharacterComponent : MonoBehaviour
             }
 
             rigidBody.velocity = newVelocity;
-            jump = false;
+            jumpDiceRoll = 0;
         }
 
         // Horizontal movement
         Vector3 groundDirectionPositive = new Vector3(Mathf.Abs(groundDirection.x), Mathf.Abs(groundDirection.y), 0.0f);
         Vector3 right = Vector3.Cross(Vector3.forward, groundDirectionPositive);
         float currentSidewaysSpeed = rigidBody.velocity.x * right.x + rigidBody.velocity.y * right.y;
-        Debug.Log(currentSidewaysSpeed);
-        Debug.Log(sidewaysInput);
         if (sidewaysInput != 0.0f)
         {
             int layerMask = 1 << 3;
@@ -127,6 +123,7 @@ public class CharacterComponent : MonoBehaviour
                 rigidBody.velocity -= right * Mathf.Min(maxSidewaysSpeed, currentSidewaysSpeed);
             }
         }
+        //# cap vertical speed
 /*
         float currentVerticalSpeed = mRigidBody.velocity.x * -groundDirection.x + mRigidBody.velocity.y * -groundDirection.y;
         if (Mathf.Abs(currentVerticalSpeed) > maxVerticalSpeed)
@@ -134,5 +131,10 @@ public class CharacterComponent : MonoBehaviour
             mRigidBody.velocity -= groundDirection * (Mathf.Abs(currentVerticalSpeed) - maxVerticalSpeed);
         }
 */
+    }
+
+    public void DoJump(int diceValue)
+    {
+        jumpDiceRoll = diceValue;
     }
 }

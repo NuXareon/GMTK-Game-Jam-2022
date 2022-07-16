@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 14605494952017456}
   - component: {fileID: 14605494952017463}
   - component: {fileID: 14605494952017457}
+  - component: {fileID: 4772497744740459569}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -131,3 +132,15 @@ MonoBehaviour:
   sidewaysAcceleration: 2
   jumpStrength: 1.22
   debugDiceRoll: 0
+--- !u!114 &4772497744740459569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14605494952017418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cde8017fddebd84388fb9fad514fe26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
