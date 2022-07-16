@@ -130,4 +130,4 @@ MonoBehaviour:
   maxSidewaysSpeed: 20
   sidewaysAcceleration: 2
   jumpStrength: 1.22
-  debugDiceRoll: 0
+  debugDiceRoll: 1
