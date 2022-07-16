@@ -40,7 +40,6 @@ public class CharacterComponent : MonoBehaviour
         if (isDashing)
         {
             dashTime += Time.deltaTime;
-            return; // Don't process movement while dashing
         }
 
         sidewaysInput = -Input.GetAxis("Horizontal");
