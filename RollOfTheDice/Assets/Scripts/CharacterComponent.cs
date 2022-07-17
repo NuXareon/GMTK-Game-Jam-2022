@@ -101,7 +101,7 @@ public class CharacterComponent : MonoBehaviour
         {
             // #Scale with dice
             float attackDistance = 1.5f + attackDiceRoll*0.15f;
-            RaycastHit[] hits = Physics.BoxCastAll(transform.position, transform.localScale / 2, orientation, Quaternion.identity, attackDistance);
+            RaycastHit[] hits = Physics.BoxCastAll(transform.position, transform.localScale, orientation, Quaternion.identity, attackDistance);
 
             foreach (RaycastHit hit in hits)
             {
