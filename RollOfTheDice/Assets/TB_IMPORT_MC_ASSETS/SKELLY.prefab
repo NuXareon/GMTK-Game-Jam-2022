@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3900825286118239484}
   - component: {fileID: 4672576947912449655}
   m_Layer: 0
-  m_Name: New Harmony Project Import 1Project
+  m_Name: SKELLY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
   Material: {fileID: 2100000, guid: 459683e483e91c84b9e54f31e0fef25b, type: 2}
   Color: {r: 1, g: 1, b: 1, a: 1}
   DiscretizationStep: 4
-  CurrentClipIndex: 0
+  CurrentClipIndex: 1
   CurrentFrame: 1
   AnimationSettings:
     FrameRate: 24

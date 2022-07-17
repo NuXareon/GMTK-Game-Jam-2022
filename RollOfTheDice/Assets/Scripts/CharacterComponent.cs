@@ -15,6 +15,7 @@ public class CharacterComponent : MonoBehaviour
     Rigidbody rigidBody;
     GameFlow gameFlow;
     Animator animator;
+    float originalLocalScaleX;
 
     float sidewaysInput = 0.0f;
     Vector3 orientation = new Vector3(1f, 0f, 0f);
@@ -45,7 +46,7 @@ public class CharacterComponent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        originalLocalScaleX = animator.transform.localScale.x;
     }
 
     // Update is called once per frame
@@ -120,6 +121,15 @@ public class CharacterComponent : MonoBehaviour
 
             isAttacking = true;
             attackDiceRoll = 0;
+        }
+
+        if (orientation.x < 0f)
+        {
+            animator.transform.localScale = new Vector3(-originalLocalScaleX, animator.transform.localScale.y, animator.transform.localScale.z);
+        }
+        else
+        {
+            animator.transform.localScale = new Vector3(originalLocalScaleX, animator.transform.localScale.y, animator.transform.localScale.z);
         }
 
         UpdateAnimator(isAttacking);
@@ -381,12 +391,11 @@ public class CharacterComponent : MonoBehaviour
         int layerMask = 1 << 3;
         bool isGrounded = Physics.Raycast(transform.position, groundDirection, transform.localScale.x + 0.1f, layerMask);
 
-        animator.SetBool("Flip Orientation", orientation.x < 0);
-        animator.SetFloat("Lateral Speed", currentSidewaysSpeed);
         animator.SetBool("IsDashing", isDashing);
-        animator.SetBool("IsTakingDamage", invulnerability > 0.0f);
+        animator.SetBool("IsTakingDamage", isDead ? false : invulnerability > 0.0f);
         animator.SetBool("IsIdle", currentSidewaysSpeed == 0.0f && sidewaysInput == 0);
         animator.SetBool("IsGrounded", isGrounded);
         animator.SetBool("IsAttacking", isAttacking);
+        animator.SetBool("IsDead", isDead);
     }
 }
