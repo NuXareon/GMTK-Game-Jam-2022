@@ -13,6 +13,7 @@ public class CharacterComponent : MonoBehaviour
 
     Rigidbody rigidBody;
     GameFlow gameFlow;
+    Animator animator;
 
     float sidewaysInput = 0.0f;
     Vector3 orientation = new Vector3(1f, 0f, 0f);
@@ -33,6 +34,7 @@ public class CharacterComponent : MonoBehaviour
     void Awake()
     {
         rigidBody = GetComponent<Rigidbody>();
+        animator = GetComponentInChildren<Animator>();
 
         GameObject gameLogic = GameObject.FindGameObjectWithTag("GameController");
         gameFlow = gameLogic.GetComponent<GameFlow>();
@@ -51,6 +53,7 @@ public class CharacterComponent : MonoBehaviour
         {
             sidewaysInput = 0.0f;
             CancelDash();
+            UpdateAnimator();
             return;
         }
 
@@ -88,6 +91,8 @@ public class CharacterComponent : MonoBehaviour
             Vector3 right = Vector3.Cross(Vector3.forward, groundDirectionPositive);
             orientation = (right * sidewaysInput).normalized;
         }
+
+        UpdateAnimator();
     }
 
     void FixedUpdate()
@@ -316,5 +321,23 @@ public class CharacterComponent : MonoBehaviour
         }
 
         dashDiceRoll = diceValue;
+    }
+
+    void UpdateAnimator()
+    {
+        Vector3 groundDirection = Physics.gravity.normalized;
+        Vector3 groundDirectionPositive = new Vector3(Mathf.Abs(groundDirection.x), Mathf.Abs(groundDirection.y), 0.0f);
+        Vector3 right = Vector3.Cross(Vector3.forward, groundDirectionPositive);
+        float currentSidewaysSpeed = rigidBody.velocity.x * right.x + rigidBody.velocity.y * right.y;
+
+        int layerMask = 1 << 3;
+        bool isGrounded = Physics.Raycast(transform.position, groundDirection, transform.localScale.x + 0.1f, layerMask);
+
+        animator.SetBool("Flip Orientation", orientation.x < 0);
+        animator.SetFloat("Lateral Speed", currentSidewaysSpeed);
+        animator.SetBool("IsDashing", isDashing);
+        animator.SetBool("IsTakingDamage", invulnerability > 0.0f);
+        animator.SetBool("IsIdle", currentSidewaysSpeed == 0.0f && sidewaysInput == 0);
+        animator.SetBool("IsGrounded", isGrounded);
     }
 }
