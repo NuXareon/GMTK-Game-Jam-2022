@@ -54,7 +54,6 @@ MonoBehaviour:
   diceUIPrefab4: {fileID: 4298044042091625810, guid: 910cacb95b41ed04c86f3cb913e1afc5, type: 3}
   diceUIPrefab5: {fileID: 3731555690635435999, guid: 5343903371b9b2147ae176cf66438dd3, type: 3}
   diceUIPrefab6: {fileID: 6398192326087453465, guid: cec313d5ffae04147a2b44765bb319fc, type: 3}
-  diceUIHighlightPrefab: {fileID: 9182203405610177696, guid: 741cbb1983b2b2f4485c2307b11ee05f, type: 3}
   dice: []
 --- !u!114 &6200477292678774193
 MonoBehaviour:
@@ -69,7 +68,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   abilitiesAvailable: 
-  abilityUIPrefab: {fileID: 2606531447730775319, guid: aa86683d0f89cdf4291018dea2c313bb, type: 3}
+  jumpUIPrefab: {fileID: 5604469620921780567, guid: 166fbc43a9b7bce4999fb191a6717307, type: 3}
+  dashUIPrefab: {fileID: 1016110962708613310, guid: 043cbe77ceae73849b6fe0677a273835, type: 3}
+  attackUIPrefab: {fileID: 1586125301592131199, guid: 7e10d9b99c79e1946a9870104e56080c, type: 3}
 --- !u!114 &2554956776988303364
 MonoBehaviour:
   m_ObjectHideFlags: 0

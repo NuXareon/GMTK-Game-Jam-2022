@@ -85,7 +85,7 @@ public class DiceComponent : MonoBehaviour
     public void UpdateUI()
     {
         // #Improve pos calculation
-        Vector2 UIPosition = new Vector2(50 + ((float)id * (125.0f + 5.0f)), -55);
+        Vector2 UIPosition = new Vector2(70 + ((float)id * (125.0f + 15.0f)), -65);
 
         if (value == 0)
         {
