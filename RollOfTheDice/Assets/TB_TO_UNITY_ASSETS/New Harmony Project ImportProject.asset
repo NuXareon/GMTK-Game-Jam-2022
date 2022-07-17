@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4414ec30ea6b264194b98915d2774c4, type: 3}
-  m_Name: Skelly_mc_anim_2Project
+  m_Name: New Harmony Project ImportProject
   m_EditorClassIdentifier: 
   Clips:
   - DisplayName: GAMEJAM_MC_v01_11

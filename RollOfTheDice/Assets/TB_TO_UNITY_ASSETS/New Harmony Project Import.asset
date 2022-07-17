@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 819987e1edc943b4fa1b1fbb06080c5b, type: 3}
-  m_Name: Skelly_mc_anim_2
+  m_Name: New Harmony Project Import
   m_EditorClassIdentifier: 
   HarmonyXMLProjectPath: D:/TB_PROJECTS/GAMEJAM_EXPORTS/GAMEJAM_MC_v01
-  OutputPath: Assets/TB_TO_UNITY_ASSETS/Skelly_mc_anim_2Project.asset
+  OutputPath: Assets/TB_TO_UNITY_ASSETS/New Harmony Project ImportProject.asset
   GeneratePrefab: 1
-  ExistingPrefab: {fileID: 914815746379737878, guid: 2557dbd5679764943b4d3ae1cdb819f5, type: 3}
+  ExistingPrefab: {fileID: 3681706412777128281, guid: 79d331a8490bcc845b3d7fff16764aaa, type: 3}
   AnimationSettings:
     FrameRate: 30
     Stepped: 1
