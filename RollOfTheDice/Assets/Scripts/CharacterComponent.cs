@@ -9,8 +9,10 @@ public class CharacterComponent : MonoBehaviour
     public float dashStrength = 10f;
     public float dashDurationSeconds = 0.2f;
     public float jumpStrength = 10f;
+    public float invulnerabilityTimeSeconds = 1f;
 
     Rigidbody rigidBody;
+    GameFlow gameFlow;
 
     float sidewaysInput = 0.0f;
     Vector3 orientation = new Vector3(1f, 0f, 0f);
@@ -23,9 +25,17 @@ public class CharacterComponent : MonoBehaviour
     bool isDashing = false;
     float dashTime = 0.0f;
 
+    float invulnerability = 0.0f;
+    float invulnerabilityInvisibility = 0.0f;
+
+    bool isDead = false;
+
     void Awake()
     {
         rigidBody = GetComponent<Rigidbody>();
+
+        GameObject gameLogic = GameObject.FindGameObjectWithTag("GameController");
+        gameFlow = gameLogic.GetComponent<GameFlow>();
     }
 
     // Start is called before the first frame update
@@ -37,9 +47,36 @@ public class CharacterComponent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isDead)
+        {
+            sidewaysInput = 0.0f;
+            CancelDash();
+            return;
+        }
+
         if (isDashing)
         {
             dashTime += Time.deltaTime;
+        }
+
+        if (invulnerability > 0.0f)
+        {
+            invulnerability -= Time.deltaTime;
+
+            if (invulnerability <= 0.0f)
+            {
+                invulnerability = 0.0f;
+                GetComponent<MeshRenderer>().enabled = true;
+            }
+            else
+            {
+                invulnerabilityInvisibility += Time.deltaTime;
+                if (invulnerabilityInvisibility > 0.15f)
+                {
+                    invulnerabilityInvisibility = 0.0f;
+                    GetComponent<MeshRenderer>().enabled = !GetComponent<MeshRenderer>().enabled;
+                }
+            }
         }
 
         sidewaysInput = -Input.GetAxis("Horizontal");
@@ -210,6 +247,49 @@ public class CharacterComponent : MonoBehaviour
         */
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        if (invulnerability > 0f)
+        {
+            return;
+        }
+
+        if (isDead)
+        {
+            return;
+        }
+
+        EnemyComponent enemy = collision.gameObject.GetComponent<EnemyComponent>();
+        if (enemy != null)
+        {
+            bool dead = GetComponent<HealthComponent>().TakeDamage(enemy.damage);
+            invulnerability = invulnerabilityTimeSeconds;
+            invulnerabilityInvisibility = 0.0f;
+
+            if (dead)
+            {
+                isDead = true;
+                gameFlow.OnPlayerDeath();
+            }
+            else
+            {
+                // #Bump and invulnerability
+                ContactPoint[] contacts = new ContactPoint[1];
+                int count = collision.GetContacts(contacts);
+
+                if (count > 0)
+                {
+                    if (isDashing)
+                    {
+                        CancelDash();
+                    }
+
+                    rigidBody.velocity = contacts[0].normal * 10f;
+                }
+            }
+        }
+    }
+
     void CancelDash()
     {
         isDashing = false;
@@ -220,11 +300,21 @@ public class CharacterComponent : MonoBehaviour
 
     public void DoJump(int diceValue)
     {
+        if (isDead)
+        {
+            return;
+        }
+
         jumpDiceRoll = diceValue;
     }
 
     public void DoDash(int diceValue)
     {
+        if (isDead)
+        {
+            return;
+        }
+
         dashDiceRoll = diceValue;
     }
 }
