@@ -946,11 +946,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6200477292678774193, guid: 5957a01dca32cf942b48e8f27dc265d9, type: 3}
       propertyPath: abilitiesAvailable.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6200477292678774193, guid: 5957a01dca32cf942b48e8f27dc265d9, type: 3}
       propertyPath: abilitiesAvailable.Array.data[1]
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6200477292678774193, guid: 5957a01dca32cf942b48e8f27dc265d9, type: 3}
+      propertyPath: abilitiesAvailable.Array.data[2]
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5957a01dca32cf942b48e8f27dc265d9, type: 3}
@@ -1015,7 +1019,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5674364141774625819, guid: 1865c32cfc829d74494385873ea0f607, type: 3}
       propertyPath: behaviour
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5674364141774625819, guid: 1865c32cfc829d74494385873ea0f607, type: 3}
       propertyPath: moveSpeed
@@ -1025,7 +1029,8 @@ PrefabInstance:
       propertyPath: patrolFlip
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5674364141774625817, guid: 1865c32cfc829d74494385873ea0f607, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1865c32cfc829d74494385873ea0f607, type: 3}
 --- !u!1001 &5946968773565334987
 PrefabInstance:

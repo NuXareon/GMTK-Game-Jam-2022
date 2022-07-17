@@ -24,6 +24,12 @@ public class GameFlow : MonoBehaviour
         StartCoroutine(KillPlayer());
     }
 
+    public void OnLevelCompleted()
+    {
+        Time.timeScale = 0;
+        StartCoroutine(FinishLevel());
+    }
+
     IEnumerator KillPlayer()
     {
         // TODO play death audio
@@ -32,5 +38,16 @@ public class GameFlow : MonoBehaviour
 
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
+    }
+
+    IEnumerator FinishLevel()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        int nextSceneIndex = scene.buildIndex + 1;
+
+        yield return new WaitForSecondsRealtime(0.5f);
+
+        Time.timeScale = 1;
+        SceneManager.LoadScene(nextSceneIndex);
     }
 }
