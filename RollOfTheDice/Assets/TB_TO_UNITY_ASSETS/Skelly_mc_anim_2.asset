@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 819987e1edc943b4fa1b1fbb06080c5b, type: 3}
+  m_Name: Skelly_mc_anim_2
+  m_EditorClassIdentifier: 
+  HarmonyXMLProjectPath: D:/TB_PROJECTS/TB_FLIX_arturo/05_renders/skulldude/GAMEJAM_MC_v01
+  OutputPath: Assets/TB_TO_UNITY_ASSETS/Skelly_mc_anim_2Project.asset
+  GeneratePrefab: 1
+  ExistingPrefab: {fileID: 914815746379737878, guid: 2557dbd5679764943b4d3ae1cdb819f5, type: 3}
+  AnimationSettings:
+    FrameRate: 30
+    Stepped: 1
+    StripPrefix: 
+  AnimationFolderName: Animations
