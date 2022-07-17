@@ -1,0 +1,913 @@
+<drawingAnimations>
+ <drawingAnimation spritesheet="sheet_Top-PerryPoireau-Default" name="idle_Top">
+  <drawing node="Perry-G_Glasses" name="23-Glasses" drwId="1">
+   <drw skinId="0" frame="1" repeat="72" name="23-Glasses-1.png"/>
+   <drw skinId="2" frame="1" repeat="72" name="23-Glasses-1.png"/>
+   <drw skinId="3" frame="1" repeat="72" name="23-Glasses-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Glasses_FrontArm" name="19-Glasses_FrontArm" drwId="2">
+   <drw skinId="0" frame="1" repeat="72" name="19-Glasses_FrontArm-1.png"/>
+   <drw skinId="2" frame="1" repeat="72" name="19-Glasses_FrontArm-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Glasses_BackArm" name="18-Glasses_BackArm" drwId="3">
+   <drw skinId="0" frame="1" repeat="72" name="18-Glasses_BackArm-1.png"/>
+   <drw skinId="2" frame="1" repeat="72" name="18-Glasses_BackArm-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eye_Left" name="22-Eye_Left" drwId="4">
+   <drw skinId="0" frame="1" repeat="60" name="22-Eye_Left-1.png"/>
+   <drw skinId="0" frame="61" repeat="4" name="22-Eye_Left-2.png"/>
+   <drw skinId="0" frame="65" repeat="4" name="22-Eye_Left-3.png"/>
+   <drw skinId="0" frame="69" repeat="4" name="22-Eye_Left-1.png"/>
+   <drw skinId="4" frame="1" repeat="60" name="22-Eye_Left-1.png"/>
+   <drw skinId="4" frame="61" repeat="4" name="22-Eye_Left-2.png"/>
+   <drw skinId="4" frame="65" repeat="4" name="22-Eye_Left-3.png"/>
+   <drw skinId="4" frame="69" repeat="4" name="22-Eye_Left-1.png"/>
+   <drw skinId="5" frame="1" repeat="60" name="22-Eye_Left-4.png"/>
+   <drw skinId="5" frame="61" repeat="4" name="22-Eye_Left-5.png"/>
+   <drw skinId="5" frame="65" repeat="4" name="22-Eye_Left-6.png"/>
+   <drw skinId="5" frame="69" repeat="4" name="22-Eye_Left-4.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eyebrow_Left" name="21-Eyebrow_Left" drwId="5">
+   <drw skinId="0" frame="1" repeat="72" name="21-Eyebrow_Left-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eye_Right" name="17-Eye_Right" drwId="6">
+   <drw skinId="0" frame="1" repeat="60" name="17-Eye_Right-1.png"/>
+   <drw skinId="0" frame="61" repeat="4" name="17-Eye_Right-2.png"/>
+   <drw skinId="0" frame="65" repeat="4" name="17-Eye_Right-3.png"/>
+   <drw skinId="0" frame="69" repeat="4" name="17-Eye_Right-1.png"/>
+   <drw skinId="4" frame="1" repeat="60" name="17-Eye_Right-1.png"/>
+   <drw skinId="4" frame="61" repeat="4" name="17-Eye_Right-2.png"/>
+   <drw skinId="4" frame="65" repeat="4" name="17-Eye_Right-3.png"/>
+   <drw skinId="4" frame="69" repeat="4" name="17-Eye_Right-1.png"/>
+   <drw skinId="5" frame="1" repeat="60" name="17-Eye_Right-4.png"/>
+   <drw skinId="5" frame="61" repeat="4" name="17-Eye_Right-5.png"/>
+   <drw skinId="5" frame="65" repeat="4" name="17-Eye_Right-6.png"/>
+   <drw skinId="5" frame="69" repeat="4" name="17-Eye_Right-4.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eyebrow_Right" name="16-Eyebrow_Right" drwId="7">
+   <drw skinId="0" frame="1" repeat="72" name="16-Eyebrow_Right-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Mouth" name="20-Mouth" drwId="8">
+   <drw skinId="0" frame="1" repeat="72" name="20-Mouth-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_HairFront_Overlay" name="33-HairFront_Overlay" drwId="9">
+   <drw skinId="0" frame="1" repeat="72" name="33-HairFront_Overlay-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hair_Front" name="24-Hair_Front" drwId="10">
+   <drw skinId="0" frame="1" repeat="72" name="24-Hair_Front-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopRight" name="26-Leek_TopRight" drwId="11">
+   <drw skinId="0" frame="1" repeat="72" name="26-Leek_TopRight-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopLeft" name="25-Leek_TopLeft" drwId="12">
+   <drw skinId="0" frame="1" repeat="72" name="25-Leek_TopLeft-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Headband" name="39-Headband" drwId="13">
+   <drw skinId="0" frame="1" repeat="72" name="39-Headband-1.png"/>
+   <drw skinId="6" frame="1" repeat="72" name="39-Headband-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_Head" name="29-Leek_Head" drwId="14">
+   <drw skinId="0" frame="1" repeat="72" name="29-Leek_Head-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopInside1" name="28-Leek_TopInside1" drwId="15">
+   <drw skinId="0" frame="1" repeat="72" name="28-Leek_TopInside1-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopInside2" name="27-Leek_TopInside2" drwId="16">
+   <drw skinId="0" frame="1" repeat="72" name="27-Leek_TopInside2-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leg_Front" name="32-Leg_Front" drwId="17">
+   <drw skinId="0" frame="1" repeat="72" name="32-Leg_Front-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Shoe_Front" name="31-Shoe_Front" drwId="18">
+   <drw skinId="0" frame="1" repeat="72" name="31-Shoe_Front-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_BackpackStrap_Front" name="10-BackpackStrap_Front" drwId="19">
+   <drw skinId="0" frame="1" repeat="72" name="10-BackpackStrap_Front-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_BackpackStrap_Underlay" name="9-BackpackStrap_Underlay" drwId="20">
+   <drw skinId="0" frame="1" repeat="72" name="9-BackpackStrap_Underlay-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Backpack" name="8-Backpack" drwId="21">
+   <drw skinId="0" frame="1" repeat="72" name="8-Backpack-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_BackpackStrap_Back" name="7-BackpackStrap_Back" drwId="22">
+   <drw skinId="0" frame="1" repeat="72" name="7-BackpackStrap_Back-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Scarf_Overlay" name="15-Scarf_Overlay" drwId="23">
+   <drw skinId="0" frame="1" repeat="72" name="15-Scarf_Overlay-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Scarf" name="14-Scarf" drwId="24">
+   <drw skinId="0" frame="1" repeat="72" name="14-Scarf-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Torso" name="13-Torso" drwId="25">
+   <drw skinId="0" frame="1" repeat="72" name="13-Torso-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hand_Front" name="12-Hand_Front" drwId="26">
+   <drw skinId="0" frame="1" repeat="72" name="12-Hand_Front-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Arm_Front" name="11-Arm_Front" drwId="27">
+   <drw skinId="0" frame="1" repeat="72" name="11-Arm_Front-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hand_Back_Anchor" name="36-Hand_Back_Anchor" drwId="28">
+   <drw skinId="0" frame="1" repeat="72" name="36-Hand_Back_Anchor-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hand_Back" name="6-Hand_Back" drwId="30">
+   <drw skinId="0" frame="1" repeat="72" name="6-Hand_Back-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Arm_Back" name="5-Arm_Back" drwId="31">
+   <drw skinId="0" frame="1" repeat="72" name="5-Arm_Back-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leg_Back" name="30-Leg_Back" drwId="32">
+   <drw skinId="0" frame="1" repeat="72" name="30-Leg_Back-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Shoe_Back" name="1-Shoe_Back" drwId="33">
+   <drw skinId="0" frame="1" repeat="72" name="1-Shoe_Back-2.png"/>
+  </drawing>
+  <drawing node="Reference-G_ground" name="3-ground" drwId="34">
+   <drw skinId="0" frame="1" repeat="72" name="3-ground-2.png"/>
+  </drawing>
+  <drawing node="Reference-G_center" name="4-center" drwId="35">
+   <drw skinId="0" frame="1" repeat="72" name="4-center-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top-PerryPoireau-Default" name="idle_Perry-G_Anchor_Prop">
+  <drawing node="Perry-G_Anchor_Prop" name="38-Anchor_Prop" drwId="29">
+   <drw skinId="0" frame="1" repeat="72" name="38-Anchor_Prop-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top-PerryPoireau-Default" name="walk_Top">
+  <drawing node="Perry-G_Glasses" name="23-Glasses" drwId="1">
+   <drw skinId="0" frame="1" repeat="24" name="23-Glasses-1.png"/>
+   <drw skinId="2" frame="1" repeat="24" name="23-Glasses-1.png"/>
+   <drw skinId="3" frame="1" repeat="24" name="23-Glasses-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Glasses_FrontArm" name="19-Glasses_FrontArm" drwId="2">
+   <drw skinId="0" frame="1" repeat="24" name="19-Glasses_FrontArm-1.png"/>
+   <drw skinId="2" frame="1" repeat="24" name="19-Glasses_FrontArm-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Glasses_BackArm" name="18-Glasses_BackArm" drwId="3">
+   <drw skinId="0" frame="1" repeat="24" name="18-Glasses_BackArm-1.png"/>
+   <drw skinId="2" frame="1" repeat="24" name="18-Glasses_BackArm-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eye_Left" name="22-Eye_Left" drwId="4">
+   <drw skinId="0" frame="1" repeat="24" name="22-Eye_Left-1.png"/>
+   <drw skinId="4" frame="1" repeat="24" name="22-Eye_Left-1.png"/>
+   <drw skinId="5" frame="1" repeat="24" name="22-Eye_Left-4.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eyebrow_Left" name="21-Eyebrow_Left" drwId="5">
+   <drw skinId="0" frame="1" repeat="24" name="21-Eyebrow_Left-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eye_Right" name="17-Eye_Right" drwId="6">
+   <drw skinId="0" frame="1" repeat="24" name="17-Eye_Right-1.png"/>
+   <drw skinId="4" frame="1" repeat="24" name="17-Eye_Right-1.png"/>
+   <drw skinId="5" frame="1" repeat="24" name="17-Eye_Right-4.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eyebrow_Right" name="16-Eyebrow_Right" drwId="7">
+   <drw skinId="0" frame="1" repeat="24" name="16-Eyebrow_Right-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Mouth" name="20-Mouth" drwId="8">
+   <drw skinId="0" frame="1" repeat="24" name="20-Mouth-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_HairFront_Overlay" name="33-HairFront_Overlay" drwId="9">
+   <drw skinId="0" frame="1" repeat="24" name="33-HairFront_Overlay-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hair_Front" name="24-Hair_Front" drwId="10">
+   <drw skinId="0" frame="1" repeat="24" name="24-Hair_Front-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopRight" name="26-Leek_TopRight" drwId="11">
+   <drw skinId="0" frame="1" repeat="24" name="26-Leek_TopRight-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopLeft" name="25-Leek_TopLeft" drwId="12">
+   <drw skinId="0" frame="1" repeat="24" name="25-Leek_TopLeft-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Headband" name="39-Headband" drwId="13">
+   <drw skinId="0" frame="1" repeat="24" name="39-Headband-1.png"/>
+   <drw skinId="6" frame="1" repeat="24" name="39-Headband-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_Head" name="29-Leek_Head" drwId="14">
+   <drw skinId="0" frame="1" repeat="24" name="29-Leek_Head-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopInside1" name="28-Leek_TopInside1" drwId="15">
+   <drw skinId="0" frame="1" repeat="24" name="28-Leek_TopInside1-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopInside2" name="27-Leek_TopInside2" drwId="16">
+   <drw skinId="0" frame="1" repeat="24" name="27-Leek_TopInside2-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leg_Front" name="32-Leg_Front" drwId="17">
+   <drw skinId="0" frame="1" repeat="9" name="32-Leg_Front-3.png"/>
+   <drw skinId="0" frame="10" repeat="2" name="32-Leg_Front-4.png"/>
+   <drw skinId="0" frame="12" repeat="6" name="32-Leg_Front-5.png"/>
+   <drw skinId="0" frame="18" repeat="4" name="32-Leg_Front-7.png"/>
+   <drw skinId="0" frame="22" repeat="2" name="32-Leg_Front-6.png"/>
+   <drw skinId="0" frame="24" repeat="1" name="32-Leg_Front-3.png"/>
+  </drawing>
+  <drawing node="Perry-G_Shoe_Front" name="31-Shoe_Front" drwId="18">
+   <drw skinId="0" frame="1" repeat="5" name="31-Shoe_Front-4.png"/>
+   <drw skinId="0" frame="6" repeat="2" name="31-Shoe_Front-5.png"/>
+   <drw skinId="0" frame="8" repeat="4" name="31-Shoe_Front-1.png"/>
+   <drw skinId="0" frame="12" repeat="12" name="31-Shoe_Front-3.png"/>
+   <drw skinId="0" frame="24" repeat="1" name="31-Shoe_Front-4.png"/>
+  </drawing>
+  <drawing node="Perry-G_BackpackStrap_Front" name="10-BackpackStrap_Front" drwId="19">
+   <drw skinId="0" frame="1" repeat="2" name="10-BackpackStrap_Front-1.png"/>
+   <drw skinId="0" frame="3" repeat="7" name="10-BackpackStrap_Front-3.png"/>
+   <drw skinId="0" frame="10" repeat="15" name="10-BackpackStrap_Front-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_BackpackStrap_Underlay" name="9-BackpackStrap_Underlay" drwId="20">
+   <drw skinId="0" frame="1" repeat="1" name="9-BackpackStrap_Underlay-5.png"/>
+   <drw skinId="0" frame="2" repeat="4" name="9-BackpackStrap_Underlay-6.png"/>
+   <drw skinId="0" frame="6" repeat="6" name="9-BackpackStrap_Underlay-4.png"/>
+   <drw skinId="0" frame="12" repeat="2" name="9-BackpackStrap_Underlay-5.png"/>
+   <drw skinId="0" frame="14" repeat="4" name="9-BackpackStrap_Underlay-2.png"/>
+   <drw skinId="0" frame="18" repeat="4" name="9-BackpackStrap_Underlay-7.png"/>
+   <drw skinId="0" frame="22" repeat="2" name="9-BackpackStrap_Underlay-3.png"/>
+   <drw skinId="0" frame="24" repeat="1" name="9-BackpackStrap_Underlay-5.png"/>
+  </drawing>
+  <drawing node="Perry-G_Backpack" name="8-Backpack" drwId="21">
+   <drw skinId="0" frame="1" repeat="2" name="8-Backpack-2.png"/>
+   <drw skinId="0" frame="3" repeat="9" name="8-Backpack-4.png"/>
+   <drw skinId="0" frame="12" repeat="3" name="8-Backpack-2.png"/>
+   <drw skinId="0" frame="15" repeat="9" name="8-Backpack-3.png"/>
+   <drw skinId="0" frame="24" repeat="1" name="8-Backpack-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_BackpackStrap_Back" name="7-BackpackStrap_Back" drwId="22">
+   <drw skinId="0" frame="1" repeat="24" name="7-BackpackStrap_Back-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Scarf_Overlay" name="15-Scarf_Overlay" drwId="23">
+   <drw skinId="0" frame="1" repeat="24" name="15-Scarf_Overlay-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Scarf" name="14-Scarf" drwId="24">
+   <drw skinId="0" frame="1" repeat="24" name="14-Scarf-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Torso" name="13-Torso" drwId="25">
+   <drw skinId="0" frame="1" repeat="24" name="13-Torso-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hand_Front" name="12-Hand_Front" drwId="26">
+   <drw skinId="0" frame="1" repeat="24" name="12-Hand_Front-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Arm_Front" name="11-Arm_Front" drwId="27">
+   <drw skinId="0" frame="1" repeat="9" name="11-Arm_Front-3.png"/>
+   <drw skinId="0" frame="10" repeat="1" name="11-Arm_Front-1.png"/>
+   <drw skinId="0" frame="11" repeat="9" name="11-Arm_Front-4.png"/>
+   <drw skinId="0" frame="20" repeat="4" name="11-Arm_Front-1.png"/>
+   <drw skinId="0" frame="24" repeat="1" name="11-Arm_Front-3.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hand_Back_Anchor" name="36-Hand_Back_Anchor" drwId="28">
+   <drw skinId="0" frame="1" repeat="24" name="36-Hand_Back_Anchor-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hand_Back" name="6-Hand_Back" drwId="30">
+   <drw skinId="0" frame="1" repeat="11" name="6-Hand_Back-2.png"/>
+   <drw skinId="0" frame="12" repeat="10" name="6-Hand_Back-1.png"/>
+   <drw skinId="0" frame="22" repeat="3" name="6-Hand_Back-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Arm_Back" name="5-Arm_Back" drwId="31">
+   <drw skinId="0" frame="1" repeat="9" name="5-Arm_Back-2.png"/>
+   <drw skinId="0" frame="10" repeat="2" name="5-Arm_Back-1.png"/>
+   <drw skinId="0" frame="12" repeat="10" name="5-Arm_Back-4.png"/>
+   <drw skinId="0" frame="22" repeat="2" name="5-Arm_Back-3.png"/>
+   <drw skinId="0" frame="24" repeat="1" name="5-Arm_Back-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leg_Back" name="30-Leg_Back" drwId="32">
+   <drw skinId="0" frame="1" repeat="5" name="30-Leg_Back-3.png"/>
+   <drw skinId="0" frame="6" repeat="4" name="30-Leg_Back-4.png"/>
+   <drw skinId="0" frame="10" repeat="5" name="30-Leg_Back-5.png"/>
+   <drw skinId="0" frame="15" repeat="5" name="30-Leg_Back-6.png"/>
+   <drw skinId="0" frame="20" repeat="4" name="30-Leg_Back-7.png"/>
+   <drw skinId="0" frame="24" repeat="1" name="30-Leg_Back-3.png"/>
+  </drawing>
+  <drawing node="Perry-G_Shoe_Back" name="1-Shoe_Back" drwId="33">
+   <drw skinId="0" frame="1" repeat="14" name="1-Shoe_Back-2.png"/>
+   <drw skinId="0" frame="15" repeat="3" name="1-Shoe_Back-3.png"/>
+   <drw skinId="0" frame="18" repeat="6" name="1-Shoe_Back-1.png"/>
+   <drw skinId="0" frame="24" repeat="1" name="1-Shoe_Back-2.png"/>
+  </drawing>
+  <drawing node="Reference-G_ground" name="3-ground" drwId="34">
+   <drw skinId="0" frame="1" repeat="24" name="3-ground-2.png"/>
+  </drawing>
+  <drawing node="Reference-G_center" name="4-center" drwId="35">
+   <drw skinId="0" frame="1" repeat="24" name="4-center-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top-PerryPoireau-Default" name="walk_Perry-G_Anchor_Prop">
+  <drawing node="Perry-G_Anchor_Prop" name="38-Anchor_Prop" drwId="29">
+   <drw skinId="0" frame="1" repeat="24" name="38-Anchor_Prop-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top-PerryPoireau-Default" name="pickup_item_Top">
+  <drawing node="Perry-G_Glasses" name="23-Glasses" drwId="1">
+   <drw skinId="0" frame="1" repeat="25" name="23-Glasses-1.png"/>
+   <drw skinId="2" frame="1" repeat="25" name="23-Glasses-1.png"/>
+   <drw skinId="3" frame="1" repeat="25" name="23-Glasses-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Glasses_FrontArm" name="19-Glasses_FrontArm" drwId="2">
+   <drw skinId="0" frame="1" repeat="25" name="19-Glasses_FrontArm-1.png"/>
+   <drw skinId="2" frame="1" repeat="25" name="19-Glasses_FrontArm-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Glasses_BackArm" name="18-Glasses_BackArm" drwId="3">
+   <drw skinId="0" frame="1" repeat="25" name="18-Glasses_BackArm-1.png"/>
+   <drw skinId="2" frame="1" repeat="25" name="18-Glasses_BackArm-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eye_Left" name="22-Eye_Left" drwId="4">
+   <drw skinId="0" frame="1" repeat="1" name="22-Eye_Left-1.png"/>
+   <drw skinId="0" frame="2" repeat="1" name="22-Eye_Left-3.png"/>
+   <drw skinId="0" frame="3" repeat="3" name="22-Eye_Left-2.png"/>
+   <drw skinId="0" frame="6" repeat="2" name="22-Eye_Left-3.png"/>
+   <drw skinId="0" frame="8" repeat="8" name="22-Eye_Left-1.png"/>
+   <drw skinId="0" frame="16" repeat="5" name="22-Eye_Left-2.png"/>
+   <drw skinId="0" frame="21" repeat="2" name="22-Eye_Left-3.png"/>
+   <drw skinId="0" frame="23" repeat="3" name="22-Eye_Left-1.png"/>
+   <drw skinId="4" frame="1" repeat="1" name="22-Eye_Left-1.png"/>
+   <drw skinId="4" frame="2" repeat="1" name="22-Eye_Left-3.png"/>
+   <drw skinId="4" frame="3" repeat="3" name="22-Eye_Left-2.png"/>
+   <drw skinId="4" frame="6" repeat="2" name="22-Eye_Left-3.png"/>
+   <drw skinId="4" frame="8" repeat="8" name="22-Eye_Left-1.png"/>
+   <drw skinId="4" frame="16" repeat="5" name="22-Eye_Left-2.png"/>
+   <drw skinId="4" frame="21" repeat="2" name="22-Eye_Left-3.png"/>
+   <drw skinId="4" frame="23" repeat="3" name="22-Eye_Left-1.png"/>
+   <drw skinId="5" frame="1" repeat="1" name="22-Eye_Left-4.png"/>
+   <drw skinId="5" frame="2" repeat="1" name="22-Eye_Left-6.png"/>
+   <drw skinId="5" frame="3" repeat="3" name="22-Eye_Left-5.png"/>
+   <drw skinId="5" frame="6" repeat="2" name="22-Eye_Left-6.png"/>
+   <drw skinId="5" frame="8" repeat="8" name="22-Eye_Left-4.png"/>
+   <drw skinId="5" frame="16" repeat="5" name="22-Eye_Left-5.png"/>
+   <drw skinId="5" frame="21" repeat="2" name="22-Eye_Left-6.png"/>
+   <drw skinId="5" frame="23" repeat="3" name="22-Eye_Left-4.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eyebrow_Left" name="21-Eyebrow_Left" drwId="5">
+   <drw skinId="0" frame="1" repeat="25" name="21-Eyebrow_Left-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eye_Right" name="17-Eye_Right" drwId="6">
+   <drw skinId="0" frame="1" repeat="1" name="17-Eye_Right-1.png"/>
+   <drw skinId="0" frame="2" repeat="1" name="17-Eye_Right-3.png"/>
+   <drw skinId="0" frame="3" repeat="3" name="17-Eye_Right-2.png"/>
+   <drw skinId="0" frame="6" repeat="2" name="17-Eye_Right-3.png"/>
+   <drw skinId="0" frame="8" repeat="8" name="17-Eye_Right-1.png"/>
+   <drw skinId="0" frame="16" repeat="5" name="17-Eye_Right-2.png"/>
+   <drw skinId="0" frame="21" repeat="2" name="17-Eye_Right-3.png"/>
+   <drw skinId="0" frame="23" repeat="3" name="17-Eye_Right-1.png"/>
+   <drw skinId="4" frame="1" repeat="1" name="17-Eye_Right-1.png"/>
+   <drw skinId="4" frame="2" repeat="1" name="17-Eye_Right-3.png"/>
+   <drw skinId="4" frame="3" repeat="3" name="17-Eye_Right-2.png"/>
+   <drw skinId="4" frame="6" repeat="2" name="17-Eye_Right-3.png"/>
+   <drw skinId="4" frame="8" repeat="8" name="17-Eye_Right-1.png"/>
+   <drw skinId="4" frame="16" repeat="5" name="17-Eye_Right-2.png"/>
+   <drw skinId="4" frame="21" repeat="2" name="17-Eye_Right-3.png"/>
+   <drw skinId="4" frame="23" repeat="3" name="17-Eye_Right-1.png"/>
+   <drw skinId="5" frame="1" repeat="1" name="17-Eye_Right-4.png"/>
+   <drw skinId="5" frame="2" repeat="1" name="17-Eye_Right-6.png"/>
+   <drw skinId="5" frame="3" repeat="3" name="17-Eye_Right-5.png"/>
+   <drw skinId="5" frame="6" repeat="2" name="17-Eye_Right-6.png"/>
+   <drw skinId="5" frame="8" repeat="8" name="17-Eye_Right-4.png"/>
+   <drw skinId="5" frame="16" repeat="5" name="17-Eye_Right-5.png"/>
+   <drw skinId="5" frame="21" repeat="2" name="17-Eye_Right-6.png"/>
+   <drw skinId="5" frame="23" repeat="3" name="17-Eye_Right-4.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eyebrow_Right" name="16-Eyebrow_Right" drwId="7">
+   <drw skinId="0" frame="1" repeat="25" name="16-Eyebrow_Right-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Mouth" name="20-Mouth" drwId="8">
+   <drw skinId="0" frame="1" repeat="25" name="20-Mouth-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_HairFront_Overlay" name="33-HairFront_Overlay" drwId="9">
+   <drw skinId="0" frame="1" repeat="25" name="33-HairFront_Overlay-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hair_Front" name="24-Hair_Front" drwId="10">
+   <drw skinId="0" frame="1" repeat="1" name="24-Hair_Front-1.png"/>
+   <drw skinId="0" frame="2" repeat="8" name="24-Hair_Front-2.png"/>
+   <drw skinId="0" frame="10" repeat="6" name="24-Hair_Front-1.png"/>
+   <drw skinId="0" frame="16" repeat="9" name="24-Hair_Front-2.png"/>
+   <drw skinId="0" frame="25" repeat="1" name="24-Hair_Front-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopRight" name="26-Leek_TopRight" drwId="11">
+   <drw skinId="0" frame="1" repeat="4" name="26-Leek_TopRight-1.png"/>
+   <drw skinId="0" frame="5" repeat="3" name="26-Leek_TopRight-2.png"/>
+   <drw skinId="0" frame="8" repeat="2" name="26-Leek_TopRight-3.png"/>
+   <drw skinId="0" frame="10" repeat="16" name="26-Leek_TopRight-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopLeft" name="25-Leek_TopLeft" drwId="12">
+   <drw skinId="0" frame="1" repeat="15" name="25-Leek_TopLeft-1.png"/>
+   <drw skinId="0" frame="16" repeat="3" name="25-Leek_TopLeft-2.png"/>
+   <drw skinId="0" frame="19" repeat="2" name="25-Leek_TopLeft-3.png"/>
+   <drw skinId="0" frame="21" repeat="5" name="25-Leek_TopLeft-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Headband" name="39-Headband" drwId="13">
+   <drw skinId="0" frame="1" repeat="25" name="39-Headband-1.png"/>
+   <drw skinId="6" frame="1" repeat="25" name="39-Headband-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_Head" name="29-Leek_Head" drwId="14">
+   <drw skinId="0" frame="1" repeat="4" name="29-Leek_Head-1.png"/>
+   <drw skinId="0" frame="5" repeat="5" name="29-Leek_Head-2.png"/>
+   <drw skinId="0" frame="10" repeat="16" name="29-Leek_Head-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopInside1" name="28-Leek_TopInside1" drwId="15">
+   <drw skinId="0" frame="1" repeat="25" name="28-Leek_TopInside1-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopInside2" name="27-Leek_TopInside2" drwId="16">
+   <drw skinId="0" frame="1" repeat="25" name="27-Leek_TopInside2-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leg_Front" name="32-Leg_Front" drwId="17">
+   <drw skinId="0" frame="1" repeat="4" name="32-Leg_Front-8.png"/>
+   <drw skinId="0" frame="5" repeat="1" name="32-Leg_Front-2.png"/>
+   <drw skinId="0" frame="6" repeat="13" name="32-Leg_Front-9.png"/>
+   <drw skinId="0" frame="19" repeat="7" name="32-Leg_Front-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Shoe_Front" name="31-Shoe_Front" drwId="18">
+   <drw skinId="0" frame="1" repeat="25" name="31-Shoe_Front-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_BackpackStrap_Front" name="10-BackpackStrap_Front" drwId="19">
+   <drw skinId="0" frame="1" repeat="25" name="10-BackpackStrap_Front-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_BackpackStrap_Underlay" name="9-BackpackStrap_Underlay" drwId="20">
+   <drw skinId="0" frame="1" repeat="5" name="9-BackpackStrap_Underlay-1.png"/>
+   <drw skinId="0" frame="6" repeat="12" name="9-BackpackStrap_Underlay-9.png"/>
+   <drw skinId="0" frame="18" repeat="8" name="9-BackpackStrap_Underlay-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Backpack" name="8-Backpack" drwId="21">
+   <drw skinId="0" frame="1" repeat="5" name="8-Backpack-2.png"/>
+   <drw skinId="0" frame="6" repeat="12" name="8-Backpack-5.png"/>
+   <drw skinId="0" frame="18" repeat="8" name="8-Backpack-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_BackpackStrap_Back" name="7-BackpackStrap_Back" drwId="22">
+   <drw skinId="0" frame="1" repeat="25" name="7-BackpackStrap_Back-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Scarf_Overlay" name="15-Scarf_Overlay" drwId="23">
+   <drw skinId="0" frame="1" repeat="5" name="15-Scarf_Overlay-1.png"/>
+   <drw skinId="0" frame="6" repeat="2" name="15-Scarf_Overlay-3.png"/>
+   <drw skinId="0" frame="8" repeat="2" name="15-Scarf_Overlay-4.png"/>
+   <drw skinId="0" frame="10" repeat="6" name="15-Scarf_Overlay-2.png"/>
+   <drw skinId="0" frame="16" repeat="3" name="15-Scarf_Overlay-5.png"/>
+   <drw skinId="0" frame="19" repeat="2" name="15-Scarf_Overlay-6.png"/>
+   <drw skinId="0" frame="21" repeat="5" name="15-Scarf_Overlay-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Scarf" name="14-Scarf" drwId="24">
+   <drw skinId="0" frame="1" repeat="25" name="14-Scarf-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Torso" name="13-Torso" drwId="25">
+   <drw skinId="0" frame="1" repeat="25" name="13-Torso-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hand_Front" name="12-Hand_Front" drwId="26">
+   <drw skinId="0" frame="1" repeat="25" name="12-Hand_Front-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Arm_Front" name="11-Arm_Front" drwId="27">
+   <drw skinId="0" frame="1" repeat="15" name="11-Arm_Front-3.png"/>
+   <drw skinId="0" frame="16" repeat="2" name="11-Arm_Front-1.png"/>
+   <drw skinId="0" frame="18" repeat="8" name="11-Arm_Front-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hand_Back_Anchor" name="36-Hand_Back_Anchor" drwId="28">
+   <drw skinId="0" frame="1" repeat="25" name="36-Hand_Back_Anchor-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hand_Back" name="6-Hand_Back" drwId="30">
+   <drw skinId="0" frame="1" repeat="4" name="6-Hand_Back-5.png"/>
+   <drw skinId="0" frame="5" repeat="3" name="6-Hand_Back-9.png"/>
+   <drw skinId="0" frame="8" repeat="2" name="6-Hand_Back-6.png"/>
+   <drw skinId="0" frame="10" repeat="6" name="6-Hand_Back-10.png"/>
+   <drw skinId="0" frame="16" repeat="2" name="6-Hand_Back-11.png"/>
+   <drw skinId="0" frame="18" repeat="3" name="6-Hand_Back-12.png"/>
+   <drw skinId="0" frame="21" repeat="2" name="6-Hand_Back-13.png"/>
+   <drw skinId="0" frame="23" repeat="3" name="6-Hand_Back-3.png"/>
+  </drawing>
+  <drawing node="Perry-G_Arm_Back" name="5-Arm_Back" drwId="31">
+   <drw skinId="0" frame="1" repeat="4" name="5-Arm_Back-4.png"/>
+   <drw skinId="0" frame="5" repeat="3" name="5-Arm_Back-1.png"/>
+   <drw skinId="0" frame="8" repeat="8" name="5-Arm_Back-2.png"/>
+   <drw skinId="0" frame="16" repeat="10" name="5-Arm_Back-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leg_Back" name="30-Leg_Back" drwId="32">
+   <drw skinId="0" frame="1" repeat="4" name="30-Leg_Back-8.png"/>
+   <drw skinId="0" frame="5" repeat="1" name="30-Leg_Back-2.png"/>
+   <drw skinId="0" frame="6" repeat="13" name="30-Leg_Back-9.png"/>
+   <drw skinId="0" frame="19" repeat="7" name="30-Leg_Back-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Shoe_Back" name="1-Shoe_Back" drwId="33">
+   <drw skinId="0" frame="1" repeat="25" name="1-Shoe_Back-2.png"/>
+  </drawing>
+  <drawing node="Reference-G_ground" name="3-ground" drwId="34">
+   <drw skinId="0" frame="1" repeat="25" name="3-ground-2.png"/>
+  </drawing>
+  <drawing node="Reference-G_center" name="4-center" drwId="35">
+   <drw skinId="0" frame="1" repeat="25" name="4-center-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top-PerryPoireau-Default" name="pickup_item_Perry-G_Anchor_Prop">
+  <drawing node="Perry-G_Anchor_Prop" name="38-Anchor_Prop" drwId="29">
+   <drw skinId="0" frame="1" repeat="25" name="38-Anchor_Prop-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top-PerryPoireau-Default" name="idle_item_Top">
+  <drawing node="Perry-G_Glasses" name="23-Glasses" drwId="1">
+   <drw skinId="0" frame="1" repeat="72" name="23-Glasses-1.png"/>
+   <drw skinId="2" frame="1" repeat="72" name="23-Glasses-1.png"/>
+   <drw skinId="3" frame="1" repeat="72" name="23-Glasses-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Glasses_FrontArm" name="19-Glasses_FrontArm" drwId="2">
+   <drw skinId="0" frame="1" repeat="72" name="19-Glasses_FrontArm-1.png"/>
+   <drw skinId="2" frame="1" repeat="72" name="19-Glasses_FrontArm-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Glasses_BackArm" name="18-Glasses_BackArm" drwId="3">
+   <drw skinId="0" frame="1" repeat="72" name="18-Glasses_BackArm-1.png"/>
+   <drw skinId="2" frame="1" repeat="72" name="18-Glasses_BackArm-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eye_Left" name="22-Eye_Left" drwId="4">
+   <drw skinId="0" frame="1" repeat="60" name="22-Eye_Left-1.png"/>
+   <drw skinId="0" frame="61" repeat="4" name="22-Eye_Left-2.png"/>
+   <drw skinId="0" frame="65" repeat="4" name="22-Eye_Left-3.png"/>
+   <drw skinId="0" frame="69" repeat="4" name="22-Eye_Left-1.png"/>
+   <drw skinId="4" frame="1" repeat="60" name="22-Eye_Left-1.png"/>
+   <drw skinId="4" frame="61" repeat="4" name="22-Eye_Left-2.png"/>
+   <drw skinId="4" frame="65" repeat="4" name="22-Eye_Left-3.png"/>
+   <drw skinId="4" frame="69" repeat="4" name="22-Eye_Left-1.png"/>
+   <drw skinId="5" frame="1" repeat="60" name="22-Eye_Left-4.png"/>
+   <drw skinId="5" frame="61" repeat="4" name="22-Eye_Left-5.png"/>
+   <drw skinId="5" frame="65" repeat="4" name="22-Eye_Left-6.png"/>
+   <drw skinId="5" frame="69" repeat="4" name="22-Eye_Left-4.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eyebrow_Left" name="21-Eyebrow_Left" drwId="5">
+   <drw skinId="0" frame="1" repeat="72" name="21-Eyebrow_Left-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eye_Right" name="17-Eye_Right" drwId="6">
+   <drw skinId="0" frame="1" repeat="60" name="17-Eye_Right-1.png"/>
+   <drw skinId="0" frame="61" repeat="4" name="17-Eye_Right-2.png"/>
+   <drw skinId="0" frame="65" repeat="4" name="17-Eye_Right-3.png"/>
+   <drw skinId="0" frame="69" repeat="4" name="17-Eye_Right-1.png"/>
+   <drw skinId="4" frame="1" repeat="60" name="17-Eye_Right-1.png"/>
+   <drw skinId="4" frame="61" repeat="4" name="17-Eye_Right-2.png"/>
+   <drw skinId="4" frame="65" repeat="4" name="17-Eye_Right-3.png"/>
+   <drw skinId="4" frame="69" repeat="4" name="17-Eye_Right-1.png"/>
+   <drw skinId="5" frame="1" repeat="60" name="17-Eye_Right-4.png"/>
+   <drw skinId="5" frame="61" repeat="4" name="17-Eye_Right-5.png"/>
+   <drw skinId="5" frame="65" repeat="4" name="17-Eye_Right-6.png"/>
+   <drw skinId="5" frame="69" repeat="4" name="17-Eye_Right-4.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eyebrow_Right" name="16-Eyebrow_Right" drwId="7">
+   <drw skinId="0" frame="1" repeat="72" name="16-Eyebrow_Right-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Mouth" name="20-Mouth" drwId="8">
+   <drw skinId="0" frame="1" repeat="72" name="20-Mouth-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_HairFront_Overlay" name="33-HairFront_Overlay" drwId="9">
+   <drw skinId="0" frame="1" repeat="72" name="33-HairFront_Overlay-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hair_Front" name="24-Hair_Front" drwId="10">
+   <drw skinId="0" frame="1" repeat="72" name="24-Hair_Front-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopRight" name="26-Leek_TopRight" drwId="11">
+   <drw skinId="0" frame="1" repeat="72" name="26-Leek_TopRight-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopLeft" name="25-Leek_TopLeft" drwId="12">
+   <drw skinId="0" frame="1" repeat="72" name="25-Leek_TopLeft-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Headband" name="39-Headband" drwId="13">
+   <drw skinId="0" frame="1" repeat="72" name="39-Headband-1.png"/>
+   <drw skinId="6" frame="1" repeat="72" name="39-Headband-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_Head" name="29-Leek_Head" drwId="14">
+   <drw skinId="0" frame="1" repeat="72" name="29-Leek_Head-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopInside1" name="28-Leek_TopInside1" drwId="15">
+   <drw skinId="0" frame="1" repeat="72" name="28-Leek_TopInside1-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopInside2" name="27-Leek_TopInside2" drwId="16">
+   <drw skinId="0" frame="1" repeat="72" name="27-Leek_TopInside2-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leg_Front" name="32-Leg_Front" drwId="17">
+   <drw skinId="0" frame="1" repeat="72" name="32-Leg_Front-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Shoe_Front" name="31-Shoe_Front" drwId="18">
+   <drw skinId="0" frame="1" repeat="72" name="31-Shoe_Front-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_BackpackStrap_Front" name="10-BackpackStrap_Front" drwId="19">
+   <drw skinId="0" frame="1" repeat="72" name="10-BackpackStrap_Front-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_BackpackStrap_Underlay" name="9-BackpackStrap_Underlay" drwId="20">
+   <drw skinId="0" frame="1" repeat="72" name="9-BackpackStrap_Underlay-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Backpack" name="8-Backpack" drwId="21">
+   <drw skinId="0" frame="1" repeat="72" name="8-Backpack-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_BackpackStrap_Back" name="7-BackpackStrap_Back" drwId="22">
+   <drw skinId="0" frame="1" repeat="72" name="7-BackpackStrap_Back-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Scarf_Overlay" name="15-Scarf_Overlay" drwId="23">
+   <drw skinId="0" frame="1" repeat="72" name="15-Scarf_Overlay-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Scarf" name="14-Scarf" drwId="24">
+   <drw skinId="0" frame="1" repeat="72" name="14-Scarf-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Torso" name="13-Torso" drwId="25">
+   <drw skinId="0" frame="1" repeat="72" name="13-Torso-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hand_Front" name="12-Hand_Front" drwId="26">
+   <drw skinId="0" frame="1" repeat="72" name="12-Hand_Front-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Arm_Front" name="11-Arm_Front" drwId="27">
+   <drw skinId="0" frame="1" repeat="72" name="11-Arm_Front-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hand_Back_Anchor" name="36-Hand_Back_Anchor" drwId="28">
+   <drw skinId="0" frame="1" repeat="72" name="36-Hand_Back_Anchor-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hand_Back" name="6-Hand_Back" drwId="30">
+   <drw skinId="0" frame="1" repeat="72" name="6-Hand_Back-3.png"/>
+  </drawing>
+  <drawing node="Perry-G_Arm_Back" name="5-Arm_Back" drwId="31">
+   <drw skinId="0" frame="1" repeat="72" name="5-Arm_Back-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leg_Back" name="30-Leg_Back" drwId="32">
+   <drw skinId="0" frame="1" repeat="72" name="30-Leg_Back-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Shoe_Back" name="1-Shoe_Back" drwId="33">
+   <drw skinId="0" frame="1" repeat="72" name="1-Shoe_Back-2.png"/>
+  </drawing>
+  <drawing node="Reference-G_ground" name="3-ground" drwId="34">
+   <drw skinId="0" frame="1" repeat="72" name="3-ground-2.png"/>
+  </drawing>
+  <drawing node="Reference-G_center" name="4-center" drwId="35">
+   <drw skinId="0" frame="1" repeat="72" name="4-center-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top-PerryPoireau-Default" name="idle_item_Perry-G_Anchor_Prop">
+  <drawing node="Perry-G_Anchor_Prop" name="38-Anchor_Prop" drwId="29">
+   <drw skinId="0" frame="1" repeat="72" name="38-Anchor_Prop-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top-PerryPoireau-Default" name="walk_item_Top">
+  <drawing node="Perry-G_Glasses" name="23-Glasses" drwId="1">
+   <drw skinId="0" frame="1" repeat="24" name="23-Glasses-1.png"/>
+   <drw skinId="2" frame="1" repeat="24" name="23-Glasses-1.png"/>
+   <drw skinId="3" frame="1" repeat="24" name="23-Glasses-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Glasses_FrontArm" name="19-Glasses_FrontArm" drwId="2">
+   <drw skinId="0" frame="1" repeat="24" name="19-Glasses_FrontArm-1.png"/>
+   <drw skinId="2" frame="1" repeat="24" name="19-Glasses_FrontArm-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Glasses_BackArm" name="18-Glasses_BackArm" drwId="3">
+   <drw skinId="0" frame="1" repeat="24" name="18-Glasses_BackArm-1.png"/>
+   <drw skinId="2" frame="1" repeat="24" name="18-Glasses_BackArm-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eye_Left" name="22-Eye_Left" drwId="4">
+   <drw skinId="0" frame="1" repeat="24" name="22-Eye_Left-1.png"/>
+   <drw skinId="4" frame="1" repeat="24" name="22-Eye_Left-1.png"/>
+   <drw skinId="5" frame="1" repeat="24" name="22-Eye_Left-4.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eyebrow_Left" name="21-Eyebrow_Left" drwId="5">
+   <drw skinId="0" frame="1" repeat="24" name="21-Eyebrow_Left-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eye_Right" name="17-Eye_Right" drwId="6">
+   <drw skinId="0" frame="1" repeat="24" name="17-Eye_Right-1.png"/>
+   <drw skinId="4" frame="1" repeat="24" name="17-Eye_Right-1.png"/>
+   <drw skinId="5" frame="1" repeat="24" name="17-Eye_Right-4.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eyebrow_Right" name="16-Eyebrow_Right" drwId="7">
+   <drw skinId="0" frame="1" repeat="24" name="16-Eyebrow_Right-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Mouth" name="20-Mouth" drwId="8">
+   <drw skinId="0" frame="1" repeat="24" name="20-Mouth-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_HairFront_Overlay" name="33-HairFront_Overlay" drwId="9">
+   <drw skinId="0" frame="1" repeat="24" name="33-HairFront_Overlay-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hair_Front" name="24-Hair_Front" drwId="10">
+   <drw skinId="0" frame="1" repeat="24" name="24-Hair_Front-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopRight" name="26-Leek_TopRight" drwId="11">
+   <drw skinId="0" frame="1" repeat="24" name="26-Leek_TopRight-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopLeft" name="25-Leek_TopLeft" drwId="12">
+   <drw skinId="0" frame="1" repeat="24" name="25-Leek_TopLeft-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Headband" name="39-Headband" drwId="13">
+   <drw skinId="0" frame="1" repeat="24" name="39-Headband-1.png"/>
+   <drw skinId="6" frame="1" repeat="24" name="39-Headband-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_Head" name="29-Leek_Head" drwId="14">
+   <drw skinId="0" frame="1" repeat="24" name="29-Leek_Head-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopInside1" name="28-Leek_TopInside1" drwId="15">
+   <drw skinId="0" frame="1" repeat="24" name="28-Leek_TopInside1-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopInside2" name="27-Leek_TopInside2" drwId="16">
+   <drw skinId="0" frame="1" repeat="24" name="27-Leek_TopInside2-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leg_Front" name="32-Leg_Front" drwId="17">
+   <drw skinId="0" frame="1" repeat="9" name="32-Leg_Front-3.png"/>
+   <drw skinId="0" frame="10" repeat="2" name="32-Leg_Front-4.png"/>
+   <drw skinId="0" frame="12" repeat="6" name="32-Leg_Front-5.png"/>
+   <drw skinId="0" frame="18" repeat="4" name="32-Leg_Front-7.png"/>
+   <drw skinId="0" frame="22" repeat="2" name="32-Leg_Front-6.png"/>
+   <drw skinId="0" frame="24" repeat="1" name="32-Leg_Front-3.png"/>
+  </drawing>
+  <drawing node="Perry-G_Shoe_Front" name="31-Shoe_Front" drwId="18">
+   <drw skinId="0" frame="1" repeat="5" name="31-Shoe_Front-4.png"/>
+   <drw skinId="0" frame="6" repeat="2" name="31-Shoe_Front-5.png"/>
+   <drw skinId="0" frame="8" repeat="4" name="31-Shoe_Front-1.png"/>
+   <drw skinId="0" frame="12" repeat="12" name="31-Shoe_Front-3.png"/>
+   <drw skinId="0" frame="24" repeat="1" name="31-Shoe_Front-4.png"/>
+  </drawing>
+  <drawing node="Perry-G_BackpackStrap_Front" name="10-BackpackStrap_Front" drwId="19">
+   <drw skinId="0" frame="1" repeat="2" name="10-BackpackStrap_Front-1.png"/>
+   <drw skinId="0" frame="3" repeat="7" name="10-BackpackStrap_Front-3.png"/>
+   <drw skinId="0" frame="10" repeat="15" name="10-BackpackStrap_Front-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_BackpackStrap_Underlay" name="9-BackpackStrap_Underlay" drwId="20">
+   <drw skinId="0" frame="1" repeat="1" name="9-BackpackStrap_Underlay-5.png"/>
+   <drw skinId="0" frame="2" repeat="4" name="9-BackpackStrap_Underlay-6.png"/>
+   <drw skinId="0" frame="6" repeat="6" name="9-BackpackStrap_Underlay-4.png"/>
+   <drw skinId="0" frame="12" repeat="2" name="9-BackpackStrap_Underlay-5.png"/>
+   <drw skinId="0" frame="14" repeat="4" name="9-BackpackStrap_Underlay-2.png"/>
+   <drw skinId="0" frame="18" repeat="4" name="9-BackpackStrap_Underlay-7.png"/>
+   <drw skinId="0" frame="22" repeat="2" name="9-BackpackStrap_Underlay-3.png"/>
+   <drw skinId="0" frame="24" repeat="1" name="9-BackpackStrap_Underlay-5.png"/>
+  </drawing>
+  <drawing node="Perry-G_Backpack" name="8-Backpack" drwId="21">
+   <drw skinId="0" frame="1" repeat="2" name="8-Backpack-2.png"/>
+   <drw skinId="0" frame="3" repeat="9" name="8-Backpack-4.png"/>
+   <drw skinId="0" frame="12" repeat="3" name="8-Backpack-2.png"/>
+   <drw skinId="0" frame="15" repeat="9" name="8-Backpack-3.png"/>
+   <drw skinId="0" frame="24" repeat="1" name="8-Backpack-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_BackpackStrap_Back" name="7-BackpackStrap_Back" drwId="22">
+   <drw skinId="0" frame="1" repeat="24" name="7-BackpackStrap_Back-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Scarf_Overlay" name="15-Scarf_Overlay" drwId="23">
+   <drw skinId="0" frame="1" repeat="24" name="15-Scarf_Overlay-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Scarf" name="14-Scarf" drwId="24">
+   <drw skinId="0" frame="1" repeat="24" name="14-Scarf-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Torso" name="13-Torso" drwId="25">
+   <drw skinId="0" frame="1" repeat="24" name="13-Torso-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hand_Front" name="12-Hand_Front" drwId="26">
+   <drw skinId="0" frame="1" repeat="24" name="12-Hand_Front-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Arm_Front" name="11-Arm_Front" drwId="27">
+   <drw skinId="0" frame="1" repeat="9" name="11-Arm_Front-3.png"/>
+   <drw skinId="0" frame="10" repeat="1" name="11-Arm_Front-1.png"/>
+   <drw skinId="0" frame="11" repeat="9" name="11-Arm_Front-4.png"/>
+   <drw skinId="0" frame="20" repeat="4" name="11-Arm_Front-1.png"/>
+   <drw skinId="0" frame="24" repeat="1" name="11-Arm_Front-3.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hand_Back_Anchor" name="36-Hand_Back_Anchor" drwId="28">
+   <drw skinId="0" frame="1" repeat="24" name="36-Hand_Back_Anchor-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hand_Back" name="6-Hand_Back" drwId="30">
+   <drw skinId="0" frame="1" repeat="24" name="6-Hand_Back-3.png"/>
+  </drawing>
+  <drawing node="Perry-G_Arm_Back" name="5-Arm_Back" drwId="31">
+   <drw skinId="0" frame="1" repeat="24" name="5-Arm_Back-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leg_Back" name="30-Leg_Back" drwId="32">
+   <drw skinId="0" frame="1" repeat="5" name="30-Leg_Back-3.png"/>
+   <drw skinId="0" frame="6" repeat="4" name="30-Leg_Back-4.png"/>
+   <drw skinId="0" frame="10" repeat="5" name="30-Leg_Back-5.png"/>
+   <drw skinId="0" frame="15" repeat="5" name="30-Leg_Back-6.png"/>
+   <drw skinId="0" frame="20" repeat="4" name="30-Leg_Back-7.png"/>
+   <drw skinId="0" frame="24" repeat="1" name="30-Leg_Back-3.png"/>
+  </drawing>
+  <drawing node="Perry-G_Shoe_Back" name="1-Shoe_Back" drwId="33">
+   <drw skinId="0" frame="1" repeat="14" name="1-Shoe_Back-2.png"/>
+   <drw skinId="0" frame="15" repeat="3" name="1-Shoe_Back-3.png"/>
+   <drw skinId="0" frame="18" repeat="6" name="1-Shoe_Back-1.png"/>
+   <drw skinId="0" frame="24" repeat="1" name="1-Shoe_Back-2.png"/>
+  </drawing>
+  <drawing node="Reference-G_ground" name="3-ground" drwId="34">
+   <drw skinId="0" frame="1" repeat="24" name="3-ground-2.png"/>
+  </drawing>
+  <drawing node="Reference-G_center" name="4-center" drwId="35">
+   <drw skinId="0" frame="1" repeat="24" name="4-center-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top-PerryPoireau-Default" name="walk_item_Perry-G_Anchor_Prop">
+  <drawing node="Perry-G_Anchor_Prop" name="38-Anchor_Prop" drwId="29">
+   <drw skinId="0" frame="1" repeat="24" name="38-Anchor_Prop-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top-PerryPoireau-Default" name="drop_item_Top">
+  <drawing node="Perry-G_Glasses" name="23-Glasses" drwId="1">
+   <drw skinId="0" frame="1" repeat="28" name="23-Glasses-1.png"/>
+   <drw skinId="2" frame="1" repeat="28" name="23-Glasses-1.png"/>
+   <drw skinId="3" frame="1" repeat="28" name="23-Glasses-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Glasses_FrontArm" name="19-Glasses_FrontArm" drwId="2">
+   <drw skinId="0" frame="1" repeat="28" name="19-Glasses_FrontArm-1.png"/>
+   <drw skinId="2" frame="1" repeat="28" name="19-Glasses_FrontArm-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Glasses_BackArm" name="18-Glasses_BackArm" drwId="3">
+   <drw skinId="0" frame="1" repeat="28" name="18-Glasses_BackArm-1.png"/>
+   <drw skinId="2" frame="1" repeat="28" name="18-Glasses_BackArm-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eye_Left" name="22-Eye_Left" drwId="4">
+   <drw skinId="0" frame="1" repeat="28" name="22-Eye_Left-1.png"/>
+   <drw skinId="4" frame="1" repeat="28" name="22-Eye_Left-1.png"/>
+   <drw skinId="5" frame="1" repeat="28" name="22-Eye_Left-4.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eyebrow_Left" name="21-Eyebrow_Left" drwId="5">
+   <drw skinId="0" frame="1" repeat="28" name="21-Eyebrow_Left-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eye_Right" name="17-Eye_Right" drwId="6">
+   <drw skinId="0" frame="1" repeat="28" name="17-Eye_Right-1.png"/>
+   <drw skinId="4" frame="1" repeat="28" name="17-Eye_Right-1.png"/>
+   <drw skinId="5" frame="1" repeat="28" name="17-Eye_Right-4.png"/>
+  </drawing>
+  <drawing node="Perry-G_Eyebrow_Right" name="16-Eyebrow_Right" drwId="7">
+   <drw skinId="0" frame="1" repeat="28" name="16-Eyebrow_Right-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Mouth" name="20-Mouth" drwId="8">
+   <drw skinId="0" frame="1" repeat="28" name="20-Mouth-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_HairFront_Overlay" name="33-HairFront_Overlay" drwId="9">
+   <drw skinId="0" frame="1" repeat="28" name="33-HairFront_Overlay-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hair_Front" name="24-Hair_Front" drwId="10">
+   <drw skinId="0" frame="1" repeat="24" name="24-Hair_Front-2.png"/>
+   <drw skinId="0" frame="25" repeat="4" name="24-Hair_Front-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopRight" name="26-Leek_TopRight" drwId="11">
+   <drw skinId="0" frame="1" repeat="28" name="26-Leek_TopRight-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopLeft" name="25-Leek_TopLeft" drwId="12">
+   <drw skinId="0" frame="1" repeat="28" name="25-Leek_TopLeft-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Headband" name="39-Headband" drwId="13">
+   <drw skinId="0" frame="1" repeat="28" name="39-Headband-1.png"/>
+   <drw skinId="6" frame="1" repeat="28" name="39-Headband-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_Head" name="29-Leek_Head" drwId="14">
+   <drw skinId="0" frame="1" repeat="28" name="29-Leek_Head-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopInside1" name="28-Leek_TopInside1" drwId="15">
+   <drw skinId="0" frame="1" repeat="28" name="28-Leek_TopInside1-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leek_TopInside2" name="27-Leek_TopInside2" drwId="16">
+   <drw skinId="0" frame="1" repeat="28" name="27-Leek_TopInside2-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leg_Front" name="32-Leg_Front" drwId="17">
+   <drw skinId="0" frame="1" repeat="21" name="32-Leg_Front-8.png"/>
+   <drw skinId="0" frame="22" repeat="7" name="32-Leg_Front-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Shoe_Front" name="31-Shoe_Front" drwId="18">
+   <drw skinId="0" frame="1" repeat="28" name="31-Shoe_Front-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_BackpackStrap_Front" name="10-BackpackStrap_Front" drwId="19">
+   <drw skinId="0" frame="1" repeat="28" name="10-BackpackStrap_Front-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_BackpackStrap_Underlay" name="9-BackpackStrap_Underlay" drwId="20">
+   <drw skinId="0" frame="1" repeat="28" name="9-BackpackStrap_Underlay-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Backpack" name="8-Backpack" drwId="21">
+   <drw skinId="0" frame="1" repeat="28" name="8-Backpack-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_BackpackStrap_Back" name="7-BackpackStrap_Back" drwId="22">
+   <drw skinId="0" frame="1" repeat="28" name="7-BackpackStrap_Back-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Scarf_Overlay" name="15-Scarf_Overlay" drwId="23">
+   <drw skinId="0" frame="1" repeat="28" name="15-Scarf_Overlay-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Scarf" name="14-Scarf" drwId="24">
+   <drw skinId="0" frame="1" repeat="28" name="14-Scarf-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Torso" name="13-Torso" drwId="25">
+   <drw skinId="0" frame="1" repeat="28" name="13-Torso-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hand_Front" name="12-Hand_Front" drwId="26">
+   <drw skinId="0" frame="1" repeat="28" name="12-Hand_Front-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Arm_Front" name="11-Arm_Front" drwId="27">
+   <drw skinId="0" frame="1" repeat="21" name="11-Arm_Front-3.png"/>
+   <drw skinId="0" frame="22" repeat="7" name="11-Arm_Front-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hand_Back_Anchor" name="36-Hand_Back_Anchor" drwId="28">
+   <drw skinId="0" frame="1" repeat="28" name="36-Hand_Back_Anchor-1.png"/>
+  </drawing>
+  <drawing node="Perry-G_Hand_Back" name="6-Hand_Back" drwId="30">
+   <drw skinId="0" frame="1" repeat="2" name="6-Hand_Back-3.png"/>
+   <drw skinId="0" frame="3" repeat="2" name="6-Hand_Back-7.png"/>
+   <drw skinId="0" frame="5" repeat="16" name="6-Hand_Back-6.png"/>
+   <drw skinId="0" frame="21" repeat="2" name="6-Hand_Back-7.png"/>
+   <drw skinId="0" frame="23" repeat="2" name="6-Hand_Back-1.png"/>
+   <drw skinId="0" frame="25" repeat="4" name="6-Hand_Back-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Arm_Back" name="5-Arm_Back" drwId="31">
+   <drw skinId="0" frame="1" repeat="20" name="5-Arm_Back-2.png"/>
+   <drw skinId="0" frame="21" repeat="2" name="5-Arm_Back-1.png"/>
+   <drw skinId="0" frame="23" repeat="6" name="5-Arm_Back-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Leg_Back" name="30-Leg_Back" drwId="32">
+   <drw skinId="0" frame="1" repeat="21" name="30-Leg_Back-8.png"/>
+   <drw skinId="0" frame="22" repeat="7" name="30-Leg_Back-2.png"/>
+  </drawing>
+  <drawing node="Perry-G_Shoe_Back" name="1-Shoe_Back" drwId="33">
+   <drw skinId="0" frame="1" repeat="28" name="1-Shoe_Back-2.png"/>
+  </drawing>
+  <drawing node="Reference-G_ground" name="3-ground" drwId="34">
+   <drw skinId="0" frame="1" repeat="28" name="3-ground-2.png"/>
+  </drawing>
+  <drawing node="Reference-G_center" name="4-center" drwId="35">
+   <drw skinId="0" frame="1" repeat="28" name="4-center-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top-PerryPoireau-Default" name="drop_item_Perry-G_Anchor_Prop">
+  <drawing node="Perry-G_Anchor_Prop" name="38-Anchor_Prop" drwId="29">
+   <drw skinId="0" frame="1" repeat="28" name="38-Anchor_Prop-1.png"/>
+  </drawing>
+ </drawingAnimation>
+</drawingAnimations>
