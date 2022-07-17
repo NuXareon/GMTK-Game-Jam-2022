@@ -33,7 +33,10 @@ public class EnemyComponent : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        storedXScale = transform.localScale.x;
+        if (animator)
+        {
+            storedXScale = animator.transform.localScale.x;
+        }
     }
 
     // Update is called once per frame
@@ -50,13 +53,16 @@ public class EnemyComponent : MonoBehaviour
             moving = DoFollow();
         }
 
-        if (flipObject)
+        if (animator)
         {
-            transform.localScale = new Vector3(-storedXScale, transform.localScale.y, transform.localScale.z);
-        }
-        else
-        {
-            transform.localScale = new Vector3(storedXScale, transform.localScale.y, transform.localScale.z);
+            if (flipObject)
+            {
+                animator.transform.localScale = new Vector3(-storedXScale, animator.transform.localScale.y, animator.transform.localScale.z);
+            }
+            else
+            {
+                animator.transform.localScale = new Vector3(storedXScale, animator.transform.localScale.y, animator.transform.localScale.z);
+            }
         }
 
         UpdateAnimation(moving);
@@ -71,7 +77,7 @@ public class EnemyComponent : MonoBehaviour
         }
 
         int layerMask = 1 << 3;
-        bool hitWall = Physics.Raycast(transform.position, direction, transform.localScale.x + 0.01f, layerMask);
+        bool hitWall = Physics.Raycast(transform.position, direction, transform.localScale.x + 0.1f, layerMask);
         if (hitWall)
         {
             patrolFlip = !patrolFlip;
@@ -81,7 +87,7 @@ public class EnemyComponent : MonoBehaviour
             characterController.Move(direction * moveSpeed * Time.deltaTime);
         }
 
-        flipObject = patrolFlip;
+        flipObject = !patrolFlip;
     }
 
     bool DoFollow()
