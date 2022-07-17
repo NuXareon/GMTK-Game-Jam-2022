@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: iphone-retina
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 0
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 67e8c211400bfe3489ef2a207305c44e, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 04c5b4b015242f24fafb158b23d64e8b, type: 3}
+  - {fileID: 21300000, guid: c0b800d0250954042bf257195c0ee329, type: 3}
+  - {fileID: 21300000, guid: 8368f8f0ffaed6644a357f73fc733dc4, type: 3}
+  - {fileID: 21300000, guid: 65731211430eb394c9ca936a75509357, type: 3}
+  - {fileID: 21300000, guid: 616407b17263c4940b929cbbe11e5b34, type: 3}
+  - {fileID: 21300000, guid: 37a400026e5ddef429239f9f50140d2f, type: 3}
+  - {fileID: 21300000, guid: 0613b40260ea2034792fadaf1369e97e, type: 3}
+  - {fileID: 21300000, guid: b05ca804d20c1a14eb3f9e341cf4af8c, type: 3}
+  - {fileID: 21300000, guid: aa528144c1313e84c9e12beaca1da3b4, type: 3}
+  - {fileID: 21300000, guid: c975b77472512b94ba36d422e4e5c67a, type: 3}
+  - {fileID: 21300000, guid: 226451d4787a68b42a067d8a79384e7c, type: 3}
+  - {fileID: 21300000, guid: bb4205f4e2f845e4cbdc290937641dd8, type: 3}
+  - {fileID: 21300000, guid: bb3137f4a70e7db4c931b89588d22999, type: 3}
+  - {fileID: 21300000, guid: 5fa868355c5ecfc40afefe49f1222a0c, type: 3}
+  - {fileID: 21300000, guid: 3f5b2b75a6f781f4698204b1eb43c4ba, type: 3}
+  - {fileID: 21300000, guid: 86ad62f576acaa540814f9c7526156e0, type: 3}
+  - {fileID: 21300000, guid: cf14fb065beb56a48b30d8f605b011bc, type: 3}
+  - {fileID: 21300000, guid: a030ba96298145d4aa1db646852eeff9, type: 3}
+  - {fileID: 21300000, guid: e5b3d867df303ea4c8d2d207bcc746f2, type: 3}
+  - {fileID: 21300000, guid: 5e96df28bdc982849992cbaa1927cf98, type: 3}
+  - {fileID: 21300000, guid: 295cf0385d0862e4caba62a66a735769, type: 3}
+  - {fileID: 21300000, guid: 5e8d7158309049449a7635cc89d6a885, type: 3}
+  - {fileID: 21300000, guid: 5eefe0f82e882424a85763ac51dac99f, type: 3}
+  - {fileID: 21300000, guid: 264d7c19d98cbff4390f6a293c5c0561, type: 3}
+  - {fileID: 21300000, guid: ae9ecd891b0145643a8571533823c5ce, type: 3}
+  - {fileID: 21300000, guid: e9a75bebf520d4b40b7427f41d3cafdc, type: 3}
+  - {fileID: 21300000, guid: 9a94bfebbfc4f854f8a83d6854380ebe, type: 3}
+  - {fileID: 21300000, guid: e557e88cb4535a34088be10cc3eb5c74, type: 3}
+  - {fileID: 21300000, guid: e179244de9a89f1449d083f061021b5f, type: 3}
+  - {fileID: 21300000, guid: 40571afd92bb90343ba87f5819a8d90d, type: 3}
+  - {fileID: 21300000, guid: 7790ebfda46be6348aca7a9821b6cd1b, type: 3}
+  - {fileID: 21300000, guid: 292b62ee54371fa4e9f96669c65824cd, type: 3}
+  - {fileID: 21300000, guid: 357fc8fecd461c34a8490f8598821332, type: 3}
+  - {fileID: 21300000, guid: c55daa1fad93ced42bd9e3173b61ad55, type: 3}
+  - {fileID: 21300000, guid: f59d52ffa60e90b47b5a8c560ea419e1, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 13-HAND_1-1
+  - 2-HEAD-1
+  - 14-DICE-6
+  - 7-HIPS-2
+  - 13-HAND_1-3
+  - 14-DICE-1
+  - 15-new_hand-3
+  - 12-ARM_1-1
+  - 14-DICE-2
+  - 5-JAW_B-2
+  - 15-new_hand-2
+  - 6-LOWER_LEG-2
+  - 16-AVEGADESNOEMFACAS1-2
+  - 4-UPPER_LEG1-2
+  - 14-DICE-4
+  - 11-FOOT_1-3
+  - 11-FOOT_1-1
+  - 15-new_hand-1
+  - 10-EYE_1-4
+  - 6-LOWER_LEG-1
+  - 2-HEAD-2
+  - 8-NECK-1
+  - 16-AVEGADESNOEMFACAS1-1
+  - 9-BALL_PLACEHOLDER-1
+  - 11-FOOT_1-2
+  - 4-UPPER_LEG1-1
+  - 18-new_ARm-1
+  - 9-BALL_PLACEHOLDER-2
+  - 3-NOSE-1
+  - 5-JAW_B-1
+  - 10-EYE_1-1
+  - 14-DICE-5
+  - 7-HIPS-1
+  - 12-ARM_1-2
+  - 10-EYE_1-2
+  m_RenderDataMap: {}
+  m_Tag: iphone-retina
+  m_IsVariant: 0

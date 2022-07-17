@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ipad
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 0
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: ac9c0c52c9aca0844ac03d23530a53a7, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 5f27d58075c48374abf1d11c2a47b113, type: 3}
+  - {fileID: 21300000, guid: 84a51eb03a8696b43917dabd37976b83, type: 3}
+  - {fileID: 21300000, guid: 3dc5ba9157160ad43af513b087d52899, type: 3}
+  - {fileID: 21300000, guid: 45699b914ef0763499f8cfa9aa770062, type: 3}
+  - {fileID: 21300000, guid: c1fcfea1ec21c1849b42207dfa32d4d2, type: 3}
+  - {fileID: 21300000, guid: 956085d157393464486279a4030f374b, type: 3}
+  - {fileID: 21300000, guid: b35c5b72a84bbe24ea9a92e0677f4dd8, type: 3}
+  - {fileID: 21300000, guid: 13ce0ef29e01ab04fa152293b2708b26, type: 3}
+  - {fileID: 21300000, guid: cb49600519cae5545a1a3816553d5370, type: 3}
+  - {fileID: 21300000, guid: c66b8555854045f4bab60b1494872517, type: 3}
+  - {fileID: 21300000, guid: 72bc1f551fdcc524c9d2c90a0e134393, type: 3}
+  - {fileID: 21300000, guid: 0ce94fb524453ac42b102e4f97e1281a, type: 3}
+  - {fileID: 21300000, guid: 0c52ec8616d10404ca8b51164d1b1d86, type: 3}
+  - {fileID: 21300000, guid: a53110b64da33af46a20d840329bcf9c, type: 3}
+  - {fileID: 21300000, guid: 9fdfc5b62fb91e24e831d509d60042ff, type: 3}
+  - {fileID: 21300000, guid: b1bedd27b9d559c48bcdc6c21e93050f, type: 3}
+  - {fileID: 21300000, guid: 21a337474f57d3744826c488013fd4f0, type: 3}
+  - {fileID: 21300000, guid: 937942674a2d8c242838f0a3287db42b, type: 3}
+  - {fileID: 21300000, guid: 3ddc78f7e9fbc024aaab59cac2d30359, type: 3}
+  - {fileID: 21300000, guid: a11d42283ecf60044b359507d24a79b5, type: 3}
+  - {fileID: 21300000, guid: b8d0d3a84bceb3f4d9422695f464df79, type: 3}
+  - {fileID: 21300000, guid: 5b150009649ff714cb9f6613a32fd2e0, type: 3}
+  - {fileID: 21300000, guid: 1e098759d84c1d240b4e68e281b0d3d4, type: 3}
+  - {fileID: 21300000, guid: 4dedbd0a97937eb42acc67dfc1f839a5, type: 3}
+  - {fileID: 21300000, guid: b7f4192abba238740b464b1528b7f34a, type: 3}
+  - {fileID: 21300000, guid: 9dcc595bcb54d8342af95d676ced5b56, type: 3}
+  - {fileID: 21300000, guid: f79ed99bb0a445d419964892b3b78fa4, type: 3}
+  - {fileID: 21300000, guid: 922625cc1e74cac4ea80298dbc6e6758, type: 3}
+  - {fileID: 21300000, guid: c6bc61fd4d155594d9c16c6d3032a9b8, type: 3}
+  - {fileID: 21300000, guid: 19a86dfdee8fe8748ae70a99257a696a, type: 3}
+  - {fileID: 21300000, guid: 8361089ea8677b046af21121e609d6b6, type: 3}
+  - {fileID: 21300000, guid: 94a5051f64f5a66409e01c4c8e4749c7, type: 3}
+  - {fileID: 21300000, guid: e34a062f29e67454388ae0f149e6bced, type: 3}
+  - {fileID: 21300000, guid: 96c8ba7f6e042e54b89107417e67f7f4, type: 3}
+  - {fileID: 21300000, guid: 275e86cf497a52644977b4e3b13ea193, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 5-JAW_B-2
+  - 15-new_hand-1
+  - 11-FOOT_1-3
+  - 13-HAND_1-1
+  - 13-HAND_1-3
+  - 6-LOWER_LEG-1
+  - 16-AVEGADESNOEMFACAS1-2
+  - 14-DICE-4
+  - 3-NOSE-1
+  - 18-new_ARm-1
+  - 9-BALL_PLACEHOLDER-2
+  - 9-BALL_PLACEHOLDER-1
+  - 15-new_hand-3
+  - 14-DICE-2
+  - 14-DICE-6
+  - 7-HIPS-2
+  - 5-JAW_B-1
+  - 12-ARM_1-2
+  - 2-HEAD-2
+  - 16-AVEGADESNOEMFACAS1-1
+  - 10-EYE_1-2
+  - 14-DICE-1
+  - 15-new_hand-2
+  - 2-HEAD-1
+  - 7-HIPS-1
+  - 11-FOOT_1-1
+  - 11-FOOT_1-2
+  - 12-ARM_1-1
+  - 10-EYE_1-1
+  - 8-NECK-1
+  - 4-UPPER_LEG1-2
+  - 6-LOWER_LEG-2
+  - 4-UPPER_LEG1-1
+  - 14-DICE-5
+  - 10-EYE_1-4
+  m_RenderDataMap: {}
+  m_Tag: ipad
+  m_IsVariant: 0
