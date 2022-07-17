@@ -48,7 +48,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rollDiceTimeSeconds: 5
   numDice: 3
-  diceUIPrefab: {fileID: 8292239710190638703, guid: 15f1c56e489390340a0f87a3eb9165b9, type: 3}
+  diceUIPrefab1: {fileID: 2543599643457751154, guid: 6aabb80d65accd54d812fd275df69926, type: 3}
+  diceUIPrefab2: {fileID: 7112650920352175764, guid: 6855ab75c8327174782a86e01996876a, type: 3}
+  diceUIPrefab3: {fileID: 8303351740338204789, guid: ae3c90bdf3cb4b24ba953de4b79bb45a, type: 3}
+  diceUIPrefab4: {fileID: 4298044042091625810, guid: 910cacb95b41ed04c86f3cb913e1afc5, type: 3}
+  diceUIPrefab5: {fileID: 3731555690635435999, guid: 5343903371b9b2147ae176cf66438dd3, type: 3}
+  diceUIPrefab6: {fileID: 6398192326087453465, guid: cec313d5ffae04147a2b44765bb319fc, type: 3}
   diceUIHighlightPrefab: {fileID: 9182203405610177696, guid: 741cbb1983b2b2f4485c2307b11ee05f, type: 3}
   dice: []
 --- !u!114 &6200477292678774193
