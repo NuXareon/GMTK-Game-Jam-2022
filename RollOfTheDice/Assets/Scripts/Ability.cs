@@ -15,11 +15,8 @@ class AbilityUtils
     {
         // #Make this good and scalable
         RectTransform UITransform = UI.GetComponent<RectTransform>();
-        Vector2 UIPosition = new Vector2(-700f + (float)(id+1) * 280f, 50);
+        Vector2 UIPosition = new Vector2(70 + ((float)id * (125.0f + 5.0f)), 75);
         UITransform.anchoredPosition = UIPosition;
-
-        TMP_Text UIText = UI.GetComponentInChildren<TMP_Text>();
-        UIText.text = type.ToString();
     }
 }
 
@@ -52,7 +49,7 @@ public class JumpAbility : IAbility
         diceManager = controller.GetComponent<DiceManager>();
 
         id = newId;
-        UI = Object.Instantiate(abilityManager.abilityUIPrefab, UILayer.transform);
+        UI = Object.Instantiate(abilityManager.jumpUIPrefab, UILayer.transform);
         UIBackground = UI.GetComponent<UISetBackgroundComponent>();
         AbilityUtils.UpdateUI(UI, id, type);
     }
@@ -102,7 +99,7 @@ public class DashAbility : IAbility
         diceManager = controller.GetComponent<DiceManager>();
 
         id = newId;
-        UI = Object.Instantiate(abilityManager.abilityUIPrefab, UILayer.transform);
+        UI = Object.Instantiate(abilityManager.dashUIPrefab, UILayer.transform);
         UIBackground = UI.GetComponent<UISetBackgroundComponent>();
         AbilityUtils.UpdateUI(UI, id, type);
     }
@@ -152,7 +149,7 @@ public class AttackAbility : IAbility
         diceManager = controller.GetComponent<DiceManager>();
 
         id = newId;
-        UI = Object.Instantiate(abilityManager.abilityUIPrefab, UILayer.transform);
+        UI = Object.Instantiate(abilityManager.attackUIPrefab, UILayer.transform);
         UIBackground = UI.GetComponent<UISetBackgroundComponent>();
         AbilityUtils.UpdateUI(UI, id, type);
     }

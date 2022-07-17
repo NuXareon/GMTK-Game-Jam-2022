@@ -12,20 +12,12 @@ public class DiceManager : MonoBehaviour
     public GameObject diceUIPrefab4;
     public GameObject diceUIPrefab5;
     public GameObject diceUIPrefab6;
-    public GameObject diceUIHighlightPrefab;
 
     public List<GameObject> dice = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
     {
-        // #make this better
-        GameObject UILayer = GameObject.FindGameObjectWithTag("UI");
-        GameObject UIHighlihgt = Instantiate(diceUIHighlightPrefab, UILayer.transform);
-        RectTransform UITransform = UIHighlihgt.GetComponent<RectTransform>();
-        Vector2 UIPosition = new Vector2(50, -55);
-        UITransform.anchoredPosition = UIPosition;
-
         for (int i = 0; i < numDice; i++)
         {
             GameObject newDice = CreateDice(i);
@@ -89,6 +81,20 @@ public class DiceManager : MonoBehaviour
         {
             GameObject newDice = CreateDice(i);
             dice.Insert(i, newDice);
+        }
+    }
+
+    public GameObject GetDicePrefab(int value)
+    {
+        switch(value)
+        {
+            case 1: return diceUIPrefab1;
+            case 2: return diceUIPrefab2;
+            case 3: return diceUIPrefab3;
+            case 4: return diceUIPrefab4; 
+            case 5: return diceUIPrefab5;
+            case 6: return diceUIPrefab6;   
+            default: return null;
         }
     }
 }

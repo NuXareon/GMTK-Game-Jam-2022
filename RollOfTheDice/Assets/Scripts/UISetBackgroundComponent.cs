@@ -9,20 +9,28 @@ public class UISetBackgroundComponent : MonoBehaviour
     public GameObject background;
 
     float timer = 0f; 
-
-    public void SetAbilityDice(int value)
-    {
-        background.SetActive(true);
-
-        TMP_Text UIText = background.GetComponentInChildren<TMP_Text>();
-        UIText.text = value.ToString();
-
-        timer = diceTimeSeconds;
-    }
+    DiceManager diceManager;
 
     void Awake()
     {
+        GameObject gameLogic = GameObject.FindGameObjectWithTag("GameController");
+        diceManager = gameLogic.GetComponent<DiceManager>();
+    }
 
+    public void SetAbilityDice(int value)
+    {
+        if (background)
+        {
+            Destroy(background);
+        }
+
+        background = Instantiate(diceManager.GetDicePrefab(value), transform);
+        RectTransform UITransform = background.GetComponent<RectTransform>();
+        Vector2 UIPosition = new Vector2(55f, -45f);
+        UITransform.anchoredPosition = UIPosition;
+        background.transform.localScale *= 0.5f;
+
+        timer = diceTimeSeconds;
     }
 
     // Start is called before the first frame update
@@ -41,7 +49,7 @@ public class UISetBackgroundComponent : MonoBehaviour
             if (timer <= 0f)
             {
                 timer = 0f;
-                background.SetActive(false);
+                Destroy(background);
             }
         }
     }

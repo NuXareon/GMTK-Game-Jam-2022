@@ -5,7 +5,10 @@ using UnityEngine;
 public class AbilityManager : MonoBehaviour
 {
     public List<AbilityType> abilitiesAvailable;
-    public GameObject abilityUIPrefab;
+
+    public GameObject jumpUIPrefab;
+    public GameObject dashUIPrefab;
+    public GameObject attackUIPrefab;
 
     List<IAbility> abilities = new List<IAbility>();
 
