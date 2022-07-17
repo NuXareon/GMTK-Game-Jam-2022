@@ -22,6 +22,10 @@ public class AbilityManager : MonoBehaviour
             {
                 abilities.Add(new DashAbility(abilities.Count));
             }
+            else if (type == AbilityType.Attack)
+            {
+                abilities.Add(new AttackAbility(abilities.Count));
+            }
         }
     }
 
@@ -45,6 +49,18 @@ public class AbilityManager : MonoBehaviour
             foreach (IAbility ability in abilities)
             {
                 if (ability.type == AbilityType.Dash)
+                {
+                    ability.DoAction();
+                    break;
+                }
+            }
+        }
+
+        if (Input.GetButtonDown("Attack"))
+        {
+            foreach (IAbility ability in abilities)
+            {
+                if (ability.type == AbilityType.Attack)
                 {
                     ability.DoAction();
                     break;

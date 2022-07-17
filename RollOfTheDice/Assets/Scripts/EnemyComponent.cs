@@ -83,4 +83,11 @@ public class EnemyComponent : MonoBehaviour
             player.DoDamage(this, -hit.normal);
         }
     }
+
+    public void Kill()
+    {
+        // #Do dead animation
+        // wait for anim
+        Destroy(gameObject);
+    }
 }

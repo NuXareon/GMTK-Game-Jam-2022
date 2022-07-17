@@ -23,6 +23,7 @@ public class CharacterComponent : MonoBehaviour
     public int debugDiceRoll = 0;
     int jumpDiceRoll = 0;
     int dashDiceRoll = 0;
+    int attackDiceRoll = 0;
 
     bool isDashing = false;
     float dashTime = 0.0f;
@@ -54,7 +55,7 @@ public class CharacterComponent : MonoBehaviour
         {
             sidewaysInput = 0.0f;
             CancelDash();
-            UpdateAnimator();
+            UpdateAnimator(false);
             return;
         }
 
@@ -94,7 +95,34 @@ public class CharacterComponent : MonoBehaviour
             orientation = (right * sidewaysInput).normalized;
         }
 
-        UpdateAnimator();
+        bool isAttacking = false;
+        if (attackDiceRoll > 0)
+        {
+            // #Scale with dice
+            float attackDistance = 1.5f + attackDiceRoll*0.15f;
+            RaycastHit[] hits = Physics.BoxCastAll(transform.position, transform.localScale / 2, orientation, Quaternion.identity, attackDistance);
+
+            foreach (RaycastHit hit in hits)
+            {
+                EnemyComponent enemy = hit.transform.gameObject.GetComponent<EnemyComponent>();
+                HealthComponent hp = hit.transform.gameObject.GetComponent<HealthComponent>();
+                if (enemy && hp)
+                {
+                    bool isDead = hp.TakeDamage(attackDiceRoll);
+                    if (isDead)
+                    {
+                        enemy.Kill();
+                    }
+                }
+
+                Debug.Log("Hit: " + hit.transform.gameObject.name);
+            }
+
+            isAttacking = true;
+            attackDiceRoll = 0;
+        }
+
+        UpdateAnimator(isAttacking);
     }
 
     void FixedUpdate()
@@ -333,7 +361,17 @@ public class CharacterComponent : MonoBehaviour
         dashDiceRoll = diceValue;
     }
 
-    void UpdateAnimator()
+    public void DoAttack(int diceValue)
+    {
+        if (isDead)
+        {
+            return;
+        }
+
+        attackDiceRoll = diceValue;
+    }    
+
+    void UpdateAnimator(bool isAttacking)
     {
         Vector3 groundDirection = Physics.gravity.normalized;
         Vector3 groundDirectionPositive = new Vector3(Mathf.Abs(groundDirection.x), Mathf.Abs(groundDirection.y), 0.0f);
@@ -349,5 +387,6 @@ public class CharacterComponent : MonoBehaviour
         animator.SetBool("IsTakingDamage", invulnerability > 0.0f);
         animator.SetBool("IsIdle", currentSidewaysSpeed == 0.0f && sidewaysInput == 0);
         animator.SetBool("IsGrounded", isGrounded);
+        animator.SetBool("IsAttacking", isAttacking);
     }
 }
