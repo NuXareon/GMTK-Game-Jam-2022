@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using ToonBoom.Harmony;
 
 public class CharacterComponent : MonoBehaviour
 {
@@ -69,7 +70,8 @@ public class CharacterComponent : MonoBehaviour
             if (invulnerability <= 0.0f)
             {
                 invulnerability = 0.0f;
-                GetComponent<MeshRenderer>().enabled = true;
+
+                GetComponentInChildren<HarmonyRenderer>().enabled = true;
             }
             else
             {
@@ -77,7 +79,7 @@ public class CharacterComponent : MonoBehaviour
                 if (invulnerabilityInvisibility > 0.15f)
                 {
                     invulnerabilityInvisibility = 0.0f;
-                    GetComponent<MeshRenderer>().enabled = !GetComponent<MeshRenderer>().enabled;
+                    GetComponentInChildren<HarmonyRenderer>().enabled = !GetComponentInChildren<HarmonyRenderer>().enabled;
                 }
             }
         }
@@ -254,6 +256,19 @@ public class CharacterComponent : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        EnemyComponent enemy = collision.gameObject.GetComponent<EnemyComponent>();
+        ContactPoint[] contacts = new ContactPoint[1];
+        int count = collision.GetContacts(contacts);
+        Vector3 collisionNormal = Vector3.zero;
+        if (count > 0)
+        {
+            collisionNormal = collision.contacts[0].normal;
+        }
+        DoDamage(enemy, collisionNormal);
+    }
+
+    public void DoDamage(EnemyComponent enemy, Vector3 collisionNormal)
+    {
         if (invulnerability > 0f)
         {
             return;
@@ -264,7 +279,6 @@ public class CharacterComponent : MonoBehaviour
             return;
         }
 
-        EnemyComponent enemy = collision.gameObject.GetComponent<EnemyComponent>();
         if (enemy != null)
         {
             bool dead = GetComponent<HealthComponent>().TakeDamage(enemy.damage);
@@ -278,18 +292,14 @@ public class CharacterComponent : MonoBehaviour
             }
             else
             {
-                // #Bump and invulnerability
-                ContactPoint[] contacts = new ContactPoint[1];
-                int count = collision.GetContacts(contacts);
-
-                if (count > 0)
+                if (!collisionNormal.Equals(Vector3.zero))
                 {
                     if (isDashing)
                     {
                         CancelDash();
                     }
 
-                    rigidBody.velocity = contacts[0].normal * 10f;
+                    rigidBody.velocity = collisionNormal * 10f;
                 }
             }
         }
