@@ -6,7 +6,12 @@ public class DiceManager : MonoBehaviour
 {
     public float rollDiceTimeSeconds = 10.0f;
     public int numDice = 1;
-    public GameObject diceUIPrefab;
+    public GameObject diceUIPrefab1;
+    public GameObject diceUIPrefab2;
+    public GameObject diceUIPrefab3;
+    public GameObject diceUIPrefab4;
+    public GameObject diceUIPrefab5;
+    public GameObject diceUIPrefab6;
     public GameObject diceUIHighlightPrefab;
 
     public List<GameObject> dice = new List<GameObject>();
