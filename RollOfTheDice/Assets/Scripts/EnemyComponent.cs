@@ -16,32 +16,50 @@ public class EnemyComponent : MonoBehaviour
     public float moveSpeed = 2.0f;
     public bool patrolFlip = false;
 
+    bool flipObject = false;
+    float storedXScale;
+
     GameObject target;
     CharacterController characterController;
+    Animator animator;
 
     void Awake()
     {
         target = GameObject.FindGameObjectWithTag("Player");
         characterController = GetComponent<CharacterController>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Use this for initialization
     void Start()
     {
-
+        storedXScale = transform.localScale.x;
     }
 
     // Update is called once per frame
     void Update()
     {
+        bool moving = false;
         if (behaviour == EnemyBehaviour.Patrol)
         {
             DoPatrol();
+            moving = true;
         }
         else if (behaviour == EnemyBehaviour.Follow)
         {
-            DoFollow();
+            moving = DoFollow();
         }
+
+        if (flipObject)
+        {
+            transform.localScale = new Vector3(-storedXScale, transform.localScale.y, transform.localScale.z);
+        }
+        else
+        {
+            transform.localScale = new Vector3(storedXScale, transform.localScale.y, transform.localScale.z);
+        }
+
+        UpdateAnimation(moving);
     }
 
     void DoPatrol()
@@ -62,9 +80,11 @@ public class EnemyComponent : MonoBehaviour
         {
             characterController.Move(direction * moveSpeed * Time.deltaTime);
         }
+
+        flipObject = patrolFlip;
     }
 
-    void DoFollow()
+    bool DoFollow()
     {
         Vector3 targetVector = target.transform.position - transform.position;
         float magnitudeSqr = targetVector.sqrMagnitude;
@@ -72,7 +92,13 @@ public class EnemyComponent : MonoBehaviour
         {
             Vector3 targetVectorNormilized = targetVector.normalized;
             characterController.Move(targetVectorNormilized * moveSpeed * Time.deltaTime);
+
+            flipObject = targetVectorNormilized.x > 0;
+
+            return true;
         }
+
+        return false;
     }
 
     void OnControllerColliderHit(ControllerColliderHit hit)
@@ -89,5 +115,23 @@ public class EnemyComponent : MonoBehaviour
         // #Do dead animation
         // wait for anim
         Destroy(gameObject);
+    }
+
+    void UpdateAnimation(bool moving)
+    {
+        if (animator)
+        {
+            animator.SetBool("Moving", moving);
+            Vector3 targetVector = target.transform.position - transform.position;
+            float magnitudeSqr = targetVector.sqrMagnitude;
+            if (magnitudeSqr < 4.0f)
+            {
+                animator.SetBool("Bite", true);
+            }
+            else
+            {
+                animator.SetBool("Bite", false);
+            }
+        }
     }
 }
